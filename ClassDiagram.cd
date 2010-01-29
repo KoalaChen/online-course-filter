@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="選課課程篩選.FilterClass">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAAAACAAAAAAA=</HashCode>
+      <FileName>FilterClass.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="選課課程篩選.FilterEnum">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>FilterEnum.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="選課課程篩選.FilterIntEnum">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAACA=</HashCode>
+      <FileName>FilterIntEnum.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="選課課程篩選.OpEnum">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAABACA=</HashCode>
+      <FileName>OpEnum.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="選課課程篩選.BrowserFunctionModule">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAgAKAAIAAEAAAAEAAAQgAAAEAAAA=</HashCode>
+      <FileName>BrowserFunctionModule.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="選課課程篩選.CourseDataModule">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACBBIAEAQMAAAAAAAACABAAAAABDgAAIEAAAAI=</HashCode>
+      <FileName>CourseDataModule.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="選課課程篩選.FilterModule">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgCAAAAAAAAAAAAABAAAABgAAAAAAAAAAAABAgA=</HashCode>
+      <FileName>FilterModule.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="微軟正黑體" Size="9" />
+</ClassDiagram>
