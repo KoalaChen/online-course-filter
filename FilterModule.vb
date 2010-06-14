@@ -59,12 +59,11 @@ Public Module FilterModule
     End Function
     'Op = Operation
     Public Function GetFilterExpressionString() As String
-        Dim KeywordResult As New StringCollection
-        Dim WeekPeriodResult As New StringCollection
-        Dim WeekPeriodNotInResult As New StringCollection
+        Dim KeywordResult As New StringCollection '蒐集關鍵字
+        Dim WeekPeriodResult As New StringCollection '蒐集可以時間
+        Dim WeekPeriodNotInResult As New StringCollection '蒐集不可以時間
         Dim Result As New System.Text.StringBuilder '增加效能
-        Result.Append(IIf(FilterField.Keys.Count = 0, String.Empty, "("))
-        Dim Operation() As String = {"And", "Or", "Not", "Like", "In"}
+        Dim Operation() As String = {"And", "Or", "Not", "Like", "In"} '運算元
         '建立 關鍵字
         For i As Integer = 0 To FilterField.Keys.Count - 1
             Dim TempResult As String = String.Empty
@@ -77,15 +76,14 @@ Public Module FilterModule
                 For j As Integer = 0 To TempStr.Count - 1
                     TempResult &= " " & Key & " " & Operation(OpEnum.Like) & " '*" & TempStr(j) & "*' " 'Like
                     If Not j = TempStr.Count - 1 Then
-                        TempResult &= " " & Operation(OpEnum.Or) & " " 'Or
+                        TempResult &= " " & Operation(OpEnum.And) & " " 'Or
                     End If
                 Next
                 KeywordResult.Add(TempResult)
             End If
         Next
         '星期和節次(包含)
-
-        Dim PeriodStr() As Char = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D"}
+        Dim PeriodStr() As Char = {"1"c, "2"c, "3"c, "4"c, "5"c, "6"c, "7"c, "8"c, "9"c, "A"c, "B"c, "C"c, "D"c}
         Dim WeekStr() As Char = {"日", "一", "二", "三", "四", "五", "六"}
         For i As Integer = 0 To Main.WeekAndPeriodDataGridView.RowCount - 1
             For j As Integer = 0 To Main.WeekAndPeriodDataGridView.ColumnCount - 1
@@ -95,7 +93,7 @@ Public Module FilterModule
             Next
         Next
         '星期和節次(不包含)
-        If WeekPeriodResult.Count Then
+        If WeekPeriodResult.Count Then '如果，使用者有指定可以時間
             For i As Integer = 0 To Main.WeekAndPeriodDataGridView.RowCount - 1
                 For j As Integer = 1 To Main.WeekAndPeriodDataGridView.ColumnCount - 1
                     If Main.WeekAndPeriodDataGridView(j, i).Value <> "True" AndAlso j <> 0 Then
@@ -104,34 +102,41 @@ Public Module FilterModule
                 Next
             Next
         End If
-        '輸出空值
+        '
+        '開始合併字串
+        '
+
+        '輸出空值(如果都沒有指定的話)
         If FilterField.Keys.Count = 0 AndAlso WeekPeriodResult.Count = 0 Then Return Nothing
+        Result.AppendLine(IIf(FilterField.Keys.Count > 0, "(", String.Empty))
         '輸出 關鍵字
-        For i As Integer = 0 To KeywordResult.Count - 1
-            Result.Append(" ( " & KeywordResult(i) & " ) ")
-            If i <> KeywordResult.Count - 1 Then
-                Result.Append(" " & Operation(0) & " ")
-            End If
-        Next
-        Result.Append(IIf(FilterField.Keys.Count = 0, String.Empty, " ) "))
+        If KeywordResult.Count Then '如果有才執行
+            For i As Integer = 0 To KeywordResult.Count - 1
+                Result.AppendLine(" " & KeywordResult(i) & " ")
+                If i <> KeywordResult.Count - 1 Then '一直建立 AND 運算元
+                    Result.AppendLine(" " & Operation(OpEnum.And) & " ")
+                End If
+            Next
+        End If
+        Result.AppendLine(IIf(FilterField.Keys.Count > 0, ")", String.Empty))
         '輸出 星期和節次(包含)
-        Result.Append(IIf(FilterField.Keys.Count = 0 OrElse WeekPeriodResult.Count = 0, String.Empty, " And "))
-        Result.Append(IIf(WeekPeriodResult.Count = 0, String.Empty, " ( "))  'TO DO:
+        Result.AppendLine(IIf(FilterField.Keys.Count = 0 OrElse WeekPeriodResult.Count = 0, String.Empty, " And "))
+        Result.AppendLine(IIf(WeekPeriodResult.Count = 0, String.Empty, " ( "))  'TO DO:
         For i As Integer = 0 To WeekPeriodResult.Count - 1
-            Result.Append(" ( " & WeekPeriodResult(i) & " ) ")
+            Result.AppendLine(" ( " & WeekPeriodResult(i) & " ) ")
             If i <> WeekPeriodResult.Count - 1 Then
-                Result.Append(" " & Operation(1) & " ")
+                Result.AppendLine(" " & Operation(1) & " ")
             End If
         Next
-        Result.Append(IIf(WeekPeriodResult.Count = 0, String.Empty, " ) "))
+        Result.AppendLine(IIf(WeekPeriodResult.Count = 0, String.Empty, " ) "))
         '輸出 星期和節次(不包含)
-        Result.Append(IIf((FilterField.Keys.Count = 0 OrElse WeekPeriodResult.Count = 0) _
-                      AndAlso (WeekPeriodResult.Count = 0 OrElse WeekPeriodNotInResult.Count = 0), String.Empty, " And Not "))
-        Result.Append(IIf(WeekPeriodResult.Count = 0, String.Empty, "("))  'TO DO:
+        Result.AppendLine(IIf( _
+                        (WeekPeriodResult.Count <> 0 AndAlso WeekPeriodNotInResult.Count <> 0) _
+                       , " And Not (", String.Empty))
         For i As Integer = 0 To WeekPeriodNotInResult.Count - 1
             Result.Append(" ( " & WeekPeriodNotInResult(i) & " ) ")
             If i <> WeekPeriodNotInResult.Count - 1 Then
-                Result.Append(" " & Operation(OpEnum.Or) & " ")
+                Result.AppendLine(" " & Operation(OpEnum.Or) & " ")
             End If
         Next
         Result.Append(IIf(WeekPeriodResult.Count = 0, String.Empty, ")"))
@@ -140,6 +145,7 @@ Public Module FilterModule
             Result.Chars(Result.Length - 1) = String.Empty
             Result.Chars(Result.Length - 2) = String.Empty
         End If
+        Dim test As String = Result.ToString
         Return Result.ToString
     End Function '類似SQL語法
 

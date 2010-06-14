@@ -403,6 +403,8 @@ Public Class Main
     End Sub '清除篩選條件
 
     Private Sub DoFilterButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DoFilterButton.Click
+        sender.Enabled = False
+        sender.Text = "篩選中..."
         'DataColumn.Expression 屬性
         Dim [DataTable] As DataTable = DataGridViewToDataTable(ResultDataGridView)
         If DataGridViewFilter(DataGridViewToDataTable(ResultDataGridView), _
@@ -446,7 +448,8 @@ Public Class Main
                 ResultDataGridView2.Rows.RemoveAt(Index)
             Next
         End If
-
+        sender.Text = "開始篩選"
+        sender.Enabled = True
     End Sub '篩選
 
     Private Sub WeekAndPeriodDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles WeekAndPeriodDataGridView.CellContentClick
@@ -466,4 +469,5 @@ Public Class Main
     Private Sub Main_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If MsgBox("確定要離開了嗎？", MsgBoxStyle.YesNo, "確認") = MsgBoxResult.No Then e.Cancel = True
     End Sub
+
 End Class

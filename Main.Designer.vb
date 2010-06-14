@@ -26,6 +26,7 @@ Partial Class Main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.HeadTabControl = New System.Windows.Forms.TabControl
         Me.QueryTabPage = New System.Windows.Forms.TabPage
+        Me.Label14 = New System.Windows.Forms.Label
         Me.ReFreshDataLabel = New System.Windows.Forms.Label
         Me.TeachLangComboBox = New System.Windows.Forms.ComboBox
         Me.TeacherNameTextBox = New System.Windows.Forms.TextBox
@@ -147,7 +148,6 @@ Partial Class Main
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.Button1 = New System.Windows.Forms.Button
         Me.Button2 = New System.Windows.Forms.Button
-        Me.Label14 = New System.Windows.Forms.Label
         Me.HeadTabControl.SuspendLayout()
         Me.QueryTabPage.SuspendLayout()
         Me.TimePanel.SuspendLayout()
@@ -222,6 +222,16 @@ Partial Class Main
         Me.QueryTabPage.TabIndex = 0
         Me.QueryTabPage.Text = "Step1：查詢"
         Me.QueryTabPage.UseVisualStyleBackColor = True
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(26, 197)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(133, 12)
+        Me.Label14.TabIndex = 19
+        Me.Label14.Text = "(下版功能)歷年選課資料"
+        Me.Label14.Visible = False
         '
         'ReFreshDataLabel
         '
@@ -540,7 +550,7 @@ Partial Class Main
         Me.FilterTabPage.Location = New System.Drawing.Point(4, 22)
         Me.FilterTabPage.Name = "FilterTabPage"
         Me.FilterTabPage.Padding = New System.Windows.Forms.Padding(3)
-        Me.FilterTabPage.Size = New System.Drawing.Size(719, 223)
+        Me.FilterTabPage.Size = New System.Drawing.Size(719, 215)
         Me.FilterTabPage.TabIndex = 1
         Me.FilterTabPage.Text = "Step2：篩選條件"
         Me.FilterTabPage.UseVisualStyleBackColor = True
@@ -548,7 +558,7 @@ Partial Class Main
         'AutoSizeButton
         '
         Me.AutoSizeButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AutoSizeButton.Location = New System.Drawing.Point(435, 194)
+        Me.AutoSizeButton.Location = New System.Drawing.Point(435, 186)
         Me.AutoSizeButton.Name = "AutoSizeButton"
         Me.AutoSizeButton.Size = New System.Drawing.Size(87, 22)
         Me.AutoSizeButton.TabIndex = 14
@@ -562,7 +572,7 @@ Partial Class Main
         Me.WeekPeriodGroupBox.Controls.Add(Me.WeekAndPeriodDataGridView)
         Me.WeekPeriodGroupBox.Location = New System.Drawing.Point(366, 8)
         Me.WeekPeriodGroupBox.Name = "WeekPeriodGroupBox"
-        Me.WeekPeriodGroupBox.Size = New System.Drawing.Size(321, 180)
+        Me.WeekPeriodGroupBox.Size = New System.Drawing.Size(321, 172)
         Me.WeekPeriodGroupBox.TabIndex = 17
         Me.WeekPeriodGroupBox.TabStop = False
         Me.WeekPeriodGroupBox.Text = "節次篩選"
@@ -572,7 +582,7 @@ Partial Class Main
         Me.WithNULLCheckBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.WithNULLCheckBox.AutoSize = True
         Me.WithNULLCheckBox.Enabled = False
-        Me.WithNULLCheckBox.Location = New System.Drawing.Point(6, 157)
+        Me.WithNULLCheckBox.Location = New System.Drawing.Point(6, 149)
         Me.WithNULLCheckBox.Name = "WithNULLCheckBox"
         Me.WithNULLCheckBox.Size = New System.Drawing.Size(223, 16)
         Me.WithNULLCheckBox.TabIndex = 1
@@ -592,7 +602,7 @@ Partial Class Main
         Me.WeekAndPeriodDataGridView.Location = New System.Drawing.Point(11, 17)
         Me.WeekAndPeriodDataGridView.Name = "WeekAndPeriodDataGridView"
         Me.WeekAndPeriodDataGridView.RowTemplate.Height = 24
-        Me.WeekAndPeriodDataGridView.Size = New System.Drawing.Size(298, 134)
+        Me.WeekAndPeriodDataGridView.Size = New System.Drawing.Size(298, 126)
         Me.WeekAndPeriodDataGridView.TabIndex = 0
         '
         '節次Column
@@ -673,7 +683,7 @@ Partial Class Main
         Me.ControlItemGroupBox.Controls.Add(Me.KeywordSplitContainer)
         Me.ControlItemGroupBox.Location = New System.Drawing.Point(21, 8)
         Me.ControlItemGroupBox.Name = "ControlItemGroupBox"
-        Me.ControlItemGroupBox.Size = New System.Drawing.Size(339, 180)
+        Me.ControlItemGroupBox.Size = New System.Drawing.Size(339, 172)
         Me.ControlItemGroupBox.TabIndex = 16
         Me.ControlItemGroupBox.TabStop = False
         Me.ControlItemGroupBox.Text = "篩選項目"
@@ -694,7 +704,7 @@ Partial Class Main
         Me.KeywordSplitContainer.Panel2.Controls.Add(Me.KeywordFilterButton)
         Me.KeywordSplitContainer.Panel2.Controls.Add(Me.KeywordFilterRadioButton)
         Me.KeywordSplitContainer.Panel2.Enabled = False
-        Me.KeywordSplitContainer.Size = New System.Drawing.Size(333, 159)
+        Me.KeywordSplitContainer.Size = New System.Drawing.Size(333, 151)
         Me.KeywordSplitContainer.SplitterDistance = 124
         Me.KeywordSplitContainer.TabIndex = 15
         '
@@ -707,7 +717,7 @@ Partial Class Main
         Me.ControlListBox.ItemHeight = 12
         Me.ControlListBox.Location = New System.Drawing.Point(0, 0)
         Me.ControlListBox.Name = "ControlListBox"
-        Me.ControlListBox.Size = New System.Drawing.Size(124, 148)
+        Me.ControlListBox.Size = New System.Drawing.Size(124, 136)
         Me.ControlListBox.TabIndex = 3
         '
         'KeywordFilterListBox
@@ -719,14 +729,14 @@ Partial Class Main
         Me.KeywordFilterListBox.ItemHeight = 12
         Me.KeywordFilterListBox.Location = New System.Drawing.Point(12, 33)
         Me.KeywordFilterListBox.Name = "KeywordFilterListBox"
-        Me.KeywordFilterListBox.Size = New System.Drawing.Size(182, 88)
+        Me.KeywordFilterListBox.Size = New System.Drawing.Size(182, 76)
         Me.KeywordFilterListBox.TabIndex = 6
         '
         'KeywordFilterButton
         '
         Me.KeywordFilterButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KeywordFilterButton.Location = New System.Drawing.Point(12, 127)
+        Me.KeywordFilterButton.Location = New System.Drawing.Point(12, 119)
         Me.KeywordFilterButton.Name = "KeywordFilterButton"
         Me.KeywordFilterButton.Size = New System.Drawing.Size(182, 23)
         Me.KeywordFilterButton.TabIndex = 5
@@ -750,7 +760,7 @@ Partial Class Main
         Me.OnlySelectedCourseCheckBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.OnlySelectedCourseCheckBox.AutoSize = True
         Me.OnlySelectedCourseCheckBox.Enabled = False
-        Me.OnlySelectedCourseCheckBox.Location = New System.Drawing.Point(10, 199)
+        Me.OnlySelectedCourseCheckBox.Location = New System.Drawing.Point(10, 191)
         Me.OnlySelectedCourseCheckBox.Name = "OnlySelectedCourseCheckBox"
         Me.OnlySelectedCourseCheckBox.Size = New System.Drawing.Size(212, 16)
         Me.OnlySelectedCourseCheckBox.TabIndex = 13
@@ -760,7 +770,7 @@ Partial Class Main
         'ClearFilterButton
         '
         Me.ClearFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ClearFilterButton.Location = New System.Drawing.Point(609, 194)
+        Me.ClearFilterButton.Location = New System.Drawing.Point(609, 186)
         Me.ClearFilterButton.Name = "ClearFilterButton"
         Me.ClearFilterButton.Size = New System.Drawing.Size(85, 23)
         Me.ClearFilterButton.TabIndex = 14
@@ -770,7 +780,7 @@ Partial Class Main
         'DoFilterButton
         '
         Me.DoFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DoFilterButton.Location = New System.Drawing.Point(528, 194)
+        Me.DoFilterButton.Location = New System.Drawing.Point(528, 186)
         Me.DoFilterButton.Name = "DoFilterButton"
         Me.DoFilterButton.Size = New System.Drawing.Size(75, 23)
         Me.DoFilterButton.TabIndex = 1
@@ -1068,7 +1078,7 @@ Partial Class Main
         Me.CourseDetailTabPage.Location = New System.Drawing.Point(4, 22)
         Me.CourseDetailTabPage.Name = "CourseDetailTabPage"
         Me.CourseDetailTabPage.Padding = New System.Windows.Forms.Padding(3)
-        Me.CourseDetailTabPage.Size = New System.Drawing.Size(719, 223)
+        Me.CourseDetailTabPage.Size = New System.Drawing.Size(719, 215)
         Me.CourseDetailTabPage.TabIndex = 2
         Me.CourseDetailTabPage.Text = "課程網頁"
         Me.CourseDetailTabPage.UseVisualStyleBackColor = True
@@ -1079,7 +1089,7 @@ Partial Class Main
         Me.CourseDetailWebBrowser.Location = New System.Drawing.Point(3, 3)
         Me.CourseDetailWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.CourseDetailWebBrowser.Name = "CourseDetailWebBrowser"
-        Me.CourseDetailWebBrowser.Size = New System.Drawing.Size(713, 217)
+        Me.CourseDetailWebBrowser.Size = New System.Drawing.Size(713, 209)
         Me.CourseDetailWebBrowser.TabIndex = 0
         '
         'Label1
@@ -1144,7 +1154,7 @@ Partial Class Main
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(156, 9)
+        Me.Label12.Location = New System.Drawing.Point(171, 7)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(185, 12)
         Me.Label12.TabIndex = 12
@@ -1165,7 +1175,7 @@ Partial Class Main
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(719, 281)
+        Me.TabPage5.Size = New System.Drawing.Size(719, 272)
         Me.TabPage5.TabIndex = 2
         Me.TabPage5.Text = "學校網頁"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -1176,7 +1186,7 @@ Partial Class Main
         Me.CourseWebBrowser.Location = New System.Drawing.Point(3, 3)
         Me.CourseWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.CourseWebBrowser.Name = "CourseWebBrowser"
-        Me.CourseWebBrowser.Size = New System.Drawing.Size(713, 275)
+        Me.CourseWebBrowser.Size = New System.Drawing.Size(713, 266)
         Me.CourseWebBrowser.TabIndex = 2
         Me.CourseWebBrowser.Url = New System.Uri("http://course.chu.edu.tw", System.UriKind.Absolute)
         Me.CourseWebBrowser.WebBrowserShortcutsEnabled = False
@@ -1187,7 +1197,7 @@ Partial Class Main
         Me.TabPage9.Location = New System.Drawing.Point(4, 22)
         Me.TabPage9.Name = "TabPage9"
         Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage9.Size = New System.Drawing.Size(719, 281)
+        Me.TabPage9.Size = New System.Drawing.Size(719, 272)
         Me.TabPage9.TabIndex = 4
         Me.TabPage9.Text = "篩選結果"
         Me.TabPage9.UseVisualStyleBackColor = True
@@ -1202,7 +1212,7 @@ Partial Class Main
         Me.ResultDataGridView2.Location = New System.Drawing.Point(3, 3)
         Me.ResultDataGridView2.Name = "ResultDataGridView2"
         Me.ResultDataGridView2.RowTemplate.Height = 24
-        Me.ResultDataGridView2.Size = New System.Drawing.Size(713, 275)
+        Me.ResultDataGridView2.Size = New System.Drawing.Size(713, 266)
         Me.ResultDataGridView2.TabIndex = 1
         '
         'TabPage2
@@ -1457,16 +1467,6 @@ Partial Class Main
         Me.Button2.Text = "(下版功能)選課讀檔"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(26, 197)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(133, 12)
-        Me.Label14.TabIndex = 19
-        Me.Label14.Text = "(下版功能)歷年選課資料"
-        Me.Label14.Visible = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -1483,7 +1483,7 @@ Partial Class Main
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Main"
-        Me.Text = "選課課程篩選v1.0.0.1"
+        Me.Text = "選課課程篩選v1.0.0.2"
         Me.HeadTabControl.ResumeLayout(False)
         Me.QueryTabPage.ResumeLayout(False)
         Me.QueryTabPage.PerformLayout()
