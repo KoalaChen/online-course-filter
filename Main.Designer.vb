@@ -22,171 +22,169 @@ Partial Class Main
     '請不要使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
-        Me.HeadTabControl = New System.Windows.Forms.TabControl
-        Me.QueryTabPage = New System.Windows.Forms.TabPage
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.ReFreshDataLabel = New System.Windows.Forms.Label
-        Me.TeachLangComboBox = New System.Windows.Forms.ComboBox
-        Me.TeacherNameTextBox = New System.Windows.Forms.TextBox
-        Me.CourseNameTextBox = New System.Windows.Forms.TextBox
-        Me.TimePanel = New System.Windows.Forms.Panel
-        Me.WeekComboBox = New System.Windows.Forms.ComboBox
-        Me.PeriodComboBox = New System.Windows.Forms.ComboBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.NextStep2Button = New System.Windows.Forms.Button
-        Me.ResearchInstituteComboBox = New System.Windows.Forms.ComboBox
-        Me.AcademicPanel = New System.Windows.Forms.Panel
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.ClassComboBox = New System.Windows.Forms.ComboBox
-        Me.GradeComboBox = New System.Windows.Forms.ComboBox
-        Me.DepartmentComboBox = New System.Windows.Forms.ComboBox
-        Me.AcademicComboBox = New System.Windows.Forms.ComboBox
-        Me.TeachLangRadioButton = New System.Windows.Forms.RadioButton
-        Me.TeacherNameRadioButton = New System.Windows.Forms.RadioButton
-        Me.CourseNameRadioButton = New System.Windows.Forms.RadioButton
-        Me.TimeRadioButton = New System.Windows.Forms.RadioButton
-        Me.AcademicRadioButton = New System.Windows.Forms.RadioButton
-        Me.EducationRadioButton = New System.Windows.Forms.RadioButton
-        Me.ResearchInstituteRadioButton = New System.Windows.Forms.RadioButton
-        Me.MilitaryTrainingRadioButton = New System.Windows.Forms.RadioButton
-        Me.SportRadioButton = New System.Windows.Forms.RadioButton
-        Me.GeneralEducationRadioButton = New System.Windows.Forms.RadioButton
-        Me.SchoolGeneralEducationRadioButton = New System.Windows.Forms.RadioButton
-        Me.FilterTabPage = New System.Windows.Forms.TabPage
-        Me.AutoSizeButton = New System.Windows.Forms.Button
-        Me.WeekPeriodGroupBox = New System.Windows.Forms.GroupBox
-        Me.WithNULLCheckBox = New System.Windows.Forms.CheckBox
-        Me.WeekAndPeriodDataGridView = New System.Windows.Forms.DataGridView
-        Me.節次Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.日Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.一Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.二Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.三Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.四Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.五Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.六Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.ControlItemGroupBox = New System.Windows.Forms.GroupBox
-        Me.KeywordSplitContainer = New System.Windows.Forms.SplitContainer
-        Me.ControlListBox = New System.Windows.Forms.ListBox
-        Me.KeywordFilterListBox = New System.Windows.Forms.ListBox
-        Me.KeywordFilterButton = New System.Windows.Forms.Button
-        Me.KeywordFilterRadioButton = New System.Windows.Forms.RadioButton
-        Me.OnlySelectedCourseCheckBox = New System.Windows.Forms.CheckBox
-        Me.ClearFilterButton = New System.Windows.Forms.Button
-        Me.DoFilterButton = New System.Windows.Forms.Button
-        Me.ConfirmTabControl = New System.Windows.Forms.TabControl
-        Me.SubFilterTabPage = New System.Windows.Forms.TabPage
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.ChooseValueCheckedListBox = New System.Windows.Forms.CheckedListBox
-        Me.ChooseValueRadioButton = New System.Windows.Forms.RadioButton
-        Me.PeriodTabPage = New System.Windows.Forms.TabPage
-        Me.PopularityTabPage = New System.Windows.Forms.TabPage
-        Me.ControlIntPanel = New System.Windows.Forms.Panel
-        Me.CompareIntCheckBox = New System.Windows.Forms.CheckBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.CompareIntGroupBox = New System.Windows.Forms.GroupBox
-        Me.CompareIntTextBox = New System.Windows.Forms.TextBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.LessThanRadioButton = New System.Windows.Forms.RadioButton
-        Me.EqualToRadioButton = New System.Windows.Forms.RadioButton
-        Me.LessThanOrEqualToRadioButton = New System.Windows.Forms.RadioButton
-        Me.GreaterThanOrEqualToRadioButton = New System.Windows.Forms.RadioButton
-        Me.GreaterThanRadioButton = New System.Windows.Forms.RadioButton
-        Me.Compare2IntCheckBox = New System.Windows.Forms.CheckBox
-        Me.ControlIntListBox = New System.Windows.Forms.ListBox
-        Me.FilterInformationTabPage = New System.Windows.Forms.TabPage
-        Me.ControlFilterDataGridView = New System.Windows.Forms.DataGridView
-        Me.選擇Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.選項Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.值Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.CourseDetailTabPage = New System.Windows.Forms.TabPage
-        Me.CourseDetailWebBrowser = New System.Windows.Forms.WebBrowser
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.FootStatusStrip = New System.Windows.Forms.StatusStrip
-        Me.StatusLabel = New System.Windows.Forms.ToolStripStatusLabel
-        Me.WorkingToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar
-        Me.AuthorLinkLabel = New System.Windows.Forms.LinkLabel
-        Me.AuthorLabel = New System.Windows.Forms.Label
+        Me.HeadTabControl = New System.Windows.Forms.TabControl()
+        Me.QueryTabPage = New System.Windows.Forms.TabPage()
+        Me.ReFreshDataLabel = New System.Windows.Forms.Label()
+        Me.TeachLangComboBox = New System.Windows.Forms.ComboBox()
+        Me.TeacherNameTextBox = New System.Windows.Forms.TextBox()
+        Me.CourseNameTextBox = New System.Windows.Forms.TextBox()
+        Me.TimePanel = New System.Windows.Forms.Panel()
+        Me.WeekComboBox = New System.Windows.Forms.ComboBox()
+        Me.PeriodComboBox = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.NextStep2Button = New System.Windows.Forms.Button()
+        Me.ResearchInstituteComboBox = New System.Windows.Forms.ComboBox()
+        Me.AcademicPanel = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ClassComboBox = New System.Windows.Forms.ComboBox()
+        Me.GradeComboBox = New System.Windows.Forms.ComboBox()
+        Me.DepartmentComboBox = New System.Windows.Forms.ComboBox()
+        Me.AcademicComboBox = New System.Windows.Forms.ComboBox()
+        Me.TeachLangRadioButton = New System.Windows.Forms.RadioButton()
+        Me.TeacherNameRadioButton = New System.Windows.Forms.RadioButton()
+        Me.CourseNameRadioButton = New System.Windows.Forms.RadioButton()
+        Me.TimeRadioButton = New System.Windows.Forms.RadioButton()
+        Me.AcademicRadioButton = New System.Windows.Forms.RadioButton()
+        Me.EducationRadioButton = New System.Windows.Forms.RadioButton()
+        Me.ResearchInstituteRadioButton = New System.Windows.Forms.RadioButton()
+        Me.MilitaryTrainingRadioButton = New System.Windows.Forms.RadioButton()
+        Me.SportRadioButton = New System.Windows.Forms.RadioButton()
+        Me.GeneralEducationRadioButton = New System.Windows.Forms.RadioButton()
+        Me.SchoolGeneralEducationRadioButton = New System.Windows.Forms.RadioButton()
+        Me.FilterTabPage = New System.Windows.Forms.TabPage()
+        Me.AutoSizeButton = New System.Windows.Forms.Button()
+        Me.WeekPeriodGroupBox = New System.Windows.Forms.GroupBox()
+        Me.reverseCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WeekAndPeriodDataGridView = New System.Windows.Forms.DataGridView()
+        Me.節次Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.日Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.一Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.二Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.三Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.四Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.五Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.六Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.ControlItemGroupBox = New System.Windows.Forms.GroupBox()
+        Me.KeywordSplitContainer = New System.Windows.Forms.SplitContainer()
+        Me.ControlListBox = New System.Windows.Forms.ListBox()
+        Me.KeywordFilterListBox = New System.Windows.Forms.ListBox()
+        Me.KeywordFilterButton = New System.Windows.Forms.Button()
+        Me.KeywordFilterRadioButton = New System.Windows.Forms.RadioButton()
+        Me.ClearFilterButton = New System.Windows.Forms.Button()
+        Me.DoFilterButton = New System.Windows.Forms.Button()
+        Me.ConfirmTabControl = New System.Windows.Forms.TabControl()
+        Me.SubFilterTabPage = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ChooseValueCheckedListBox = New System.Windows.Forms.CheckedListBox()
+        Me.ChooseValueRadioButton = New System.Windows.Forms.RadioButton()
+        Me.PeriodTabPage = New System.Windows.Forms.TabPage()
+        Me.PopularityTabPage = New System.Windows.Forms.TabPage()
+        Me.ControlIntPanel = New System.Windows.Forms.Panel()
+        Me.CompareIntCheckBox = New System.Windows.Forms.CheckBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.CompareIntGroupBox = New System.Windows.Forms.GroupBox()
+        Me.CompareIntTextBox = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.LessThanRadioButton = New System.Windows.Forms.RadioButton()
+        Me.EqualToRadioButton = New System.Windows.Forms.RadioButton()
+        Me.LessThanOrEqualToRadioButton = New System.Windows.Forms.RadioButton()
+        Me.GreaterThanOrEqualToRadioButton = New System.Windows.Forms.RadioButton()
+        Me.GreaterThanRadioButton = New System.Windows.Forms.RadioButton()
+        Me.Compare2IntCheckBox = New System.Windows.Forms.CheckBox()
+        Me.ControlIntListBox = New System.Windows.Forms.ListBox()
+        Me.FilterInformationTabPage = New System.Windows.Forms.TabPage()
+        Me.ControlFilterDataGridView = New System.Windows.Forms.DataGridView()
+        Me.選擇Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.選項Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.值Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.CourseDetailTabPage = New System.Windows.Forms.TabPage()
+        Me.CourseDetailWebBrowser = New System.Windows.Forms.WebBrowser()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.FootStatusStrip = New System.Windows.Forms.StatusStrip()
+        Me.StatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.WorkingToolStripProgressBar = New System.Windows.Forms.ToolStripProgressBar()
+        Me.AuthorLinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.AuthorLabel = New System.Windows.Forms.Label()
         Me.ReFreshTimer = New System.Windows.Forms.Timer(Me.components)
         Me.GetDataTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.TryUpdateButton = New System.Windows.Forms.Button
-        Me.TabPage5 = New System.Windows.Forms.TabPage
-        Me.CourseWebBrowser = New System.Windows.Forms.WebBrowser
-        Me.TabPage9 = New System.Windows.Forms.TabPage
-        Me.ResultDataGridView2 = New System.Windows.Forms.DataGridView
-        Me.TabPage2 = New System.Windows.Forms.TabPage
-        Me.ResultDataGridView = New System.Windows.Forms.DataGridView
-        Me.選取Column = New System.Windows.Forms.DataGridViewCheckBoxColumn
-        Me.時段Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassIdColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.開課系所Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassNameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.課程大綱Column = New System.Windows.Forms.DataGridViewLinkColumn
-        Me.LangColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassTypeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassScoreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassTimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.WeekColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SectionsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ClassroomColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PupularityMaxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PupularityNowColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.剩下名額Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.TeacherColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.課程連結Column = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.NoteColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.FootTabControl = New System.Windows.Forms.TabControl
-        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.HeadTabControl.SuspendLayout()
-        Me.QueryTabPage.SuspendLayout()
-        Me.TimePanel.SuspendLayout()
-        Me.AcademicPanel.SuspendLayout()
-        Me.FilterTabPage.SuspendLayout()
-        Me.WeekPeriodGroupBox.SuspendLayout()
-        CType(Me.WeekAndPeriodDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ControlItemGroupBox.SuspendLayout()
-        Me.KeywordSplitContainer.Panel1.SuspendLayout()
-        Me.KeywordSplitContainer.Panel2.SuspendLayout()
-        Me.KeywordSplitContainer.SuspendLayout()
-        Me.ConfirmTabControl.SuspendLayout()
-        Me.SubFilterTabPage.SuspendLayout()
-        Me.PopularityTabPage.SuspendLayout()
-        Me.ControlIntPanel.SuspendLayout()
-        Me.CompareIntGroupBox.SuspendLayout()
-        Me.FilterInformationTabPage.SuspendLayout()
-        CType(Me.ControlFilterDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CourseDetailTabPage.SuspendLayout()
-        Me.FootStatusStrip.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        Me.TabPage9.SuspendLayout()
-        CType(Me.ResultDataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.ResultDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FootTabControl.SuspendLayout()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
-        Me.SuspendLayout()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TryUpdateButton = New System.Windows.Forms.Button()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.CourseWebBrowser = New System.Windows.Forms.WebBrowser()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.ResultDataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.ResultDataGridView = New System.Windows.Forms.DataGridView()
+        Me.選取Column = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.時段Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassIdColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.開課系所Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassNameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.課程大綱Column = New System.Windows.Forms.DataGridViewLinkColumn()
+        Me.LangColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassTypeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassScoreColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassTimeColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WeekColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SectionsColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassroomColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PupularityMaxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PupularityNowColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.剩下名額Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TeacherColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.課程連結Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NoteColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FootTabControl = New System.Windows.Forms.TabControl()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.HeadTabControl.SuspendLayout
+        Me.QueryTabPage.SuspendLayout
+        Me.TimePanel.SuspendLayout
+        Me.AcademicPanel.SuspendLayout
+        Me.FilterTabPage.SuspendLayout
+        Me.WeekPeriodGroupBox.SuspendLayout
+        CType(Me.WeekAndPeriodDataGridView,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ControlItemGroupBox.SuspendLayout
+        Me.KeywordSplitContainer.Panel1.SuspendLayout
+        Me.KeywordSplitContainer.Panel2.SuspendLayout
+        Me.KeywordSplitContainer.SuspendLayout
+        Me.ConfirmTabControl.SuspendLayout
+        Me.SubFilterTabPage.SuspendLayout
+        Me.PopularityTabPage.SuspendLayout
+        Me.ControlIntPanel.SuspendLayout
+        Me.CompareIntGroupBox.SuspendLayout
+        Me.FilterInformationTabPage.SuspendLayout
+        CType(Me.ControlFilterDataGridView,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.CourseDetailTabPage.SuspendLayout
+        Me.FootStatusStrip.SuspendLayout
+        Me.TabPage5.SuspendLayout
+        Me.TabPage9.SuspendLayout
+        CType(Me.ResultDataGridView2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabPage2.SuspendLayout
+        CType(Me.ResultDataGridView,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.FootTabControl.SuspendLayout
+        Me.SplitContainer1.Panel1.SuspendLayout
+        Me.SplitContainer1.Panel2.SuspendLayout
+        Me.SplitContainer1.SuspendLayout
+        Me.SuspendLayout
         '
         'HeadTabControl
         '
-        Me.HeadTabControl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.HeadTabControl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
         Me.HeadTabControl.Controls.Add(Me.QueryTabPage)
         Me.HeadTabControl.Controls.Add(Me.FilterTabPage)
         Me.HeadTabControl.Controls.Add(Me.CourseDetailTabPage)
-        Me.HeadTabControl.Enabled = False
+        Me.HeadTabControl.Enabled = false
         Me.HeadTabControl.Location = New System.Drawing.Point(0, 3)
         Me.HeadTabControl.Name = "HeadTabControl"
         Me.HeadTabControl.SelectedIndex = 0
@@ -195,7 +193,6 @@ Partial Class Main
         '
         'QueryTabPage
         '
-        Me.QueryTabPage.Controls.Add(Me.Label14)
         Me.QueryTabPage.Controls.Add(Me.ReFreshDataLabel)
         Me.QueryTabPage.Controls.Add(Me.TeachLangComboBox)
         Me.QueryTabPage.Controls.Add(Me.TeacherNameTextBox)
@@ -221,34 +218,24 @@ Partial Class Main
         Me.QueryTabPage.Size = New System.Drawing.Size(719, 215)
         Me.QueryTabPage.TabIndex = 0
         Me.QueryTabPage.Text = "Step1：查詢"
-        Me.QueryTabPage.UseVisualStyleBackColor = True
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(26, 197)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(133, 12)
-        Me.Label14.TabIndex = 19
-        Me.Label14.Text = "(下版功能)歷年選課資料"
-        Me.Label14.Visible = False
+        Me.QueryTabPage.UseVisualStyleBackColor = true
         '
         'ReFreshDataLabel
         '
-        Me.ReFreshDataLabel.AutoSize = True
+        Me.ReFreshDataLabel.AutoSize = true
         Me.ReFreshDataLabel.ForeColor = System.Drawing.Color.Red
         Me.ReFreshDataLabel.Location = New System.Drawing.Point(250, 37)
         Me.ReFreshDataLabel.Name = "ReFreshDataLabel"
         Me.ReFreshDataLabel.Size = New System.Drawing.Size(74, 12)
         Me.ReFreshDataLabel.TabIndex = 9
         Me.ReFreshDataLabel.Text = "更新資料中..."
-        Me.ReFreshDataLabel.Visible = False
+        Me.ReFreshDataLabel.Visible = false
         '
         'TeachLangComboBox
         '
         Me.TeachLangComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.TeachLangComboBox.Enabled = False
-        Me.TeachLangComboBox.FormattingEnabled = True
+        Me.TeachLangComboBox.Enabled = false
+        Me.TeachLangComboBox.FormattingEnabled = true
         Me.TeachLangComboBox.Location = New System.Drawing.Point(487, 101)
         Me.TeachLangComboBox.Name = "TeachLangComboBox"
         Me.TeachLangComboBox.Size = New System.Drawing.Size(132, 20)
@@ -256,7 +243,7 @@ Partial Class Main
         '
         'TeacherNameTextBox
         '
-        Me.TeacherNameTextBox.Enabled = False
+        Me.TeacherNameTextBox.Enabled = false
         Me.TeacherNameTextBox.Location = New System.Drawing.Point(487, 55)
         Me.TeacherNameTextBox.Name = "TeacherNameTextBox"
         Me.TeacherNameTextBox.Size = New System.Drawing.Size(132, 22)
@@ -264,7 +251,7 @@ Partial Class Main
         '
         'CourseNameTextBox
         '
-        Me.CourseNameTextBox.Enabled = False
+        Me.CourseNameTextBox.Enabled = false
         Me.CourseNameTextBox.Location = New System.Drawing.Point(330, 124)
         Me.CourseNameTextBox.Name = "CourseNameTextBox"
         Me.CourseNameTextBox.Size = New System.Drawing.Size(151, 22)
@@ -276,7 +263,7 @@ Partial Class Main
         Me.TimePanel.Controls.Add(Me.PeriodComboBox)
         Me.TimePanel.Controls.Add(Me.Label7)
         Me.TimePanel.Controls.Add(Me.Label6)
-        Me.TimePanel.Enabled = False
+        Me.TimePanel.Enabled = false
         Me.TimePanel.Location = New System.Drawing.Point(330, 51)
         Me.TimePanel.Name = "TimePanel"
         Me.TimePanel.Size = New System.Drawing.Size(151, 54)
@@ -285,7 +272,7 @@ Partial Class Main
         'WeekComboBox
         '
         Me.WeekComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.WeekComboBox.FormattingEnabled = True
+        Me.WeekComboBox.FormattingEnabled = true
         Me.WeekComboBox.Location = New System.Drawing.Point(38, 2)
         Me.WeekComboBox.Name = "WeekComboBox"
         Me.WeekComboBox.Size = New System.Drawing.Size(110, 20)
@@ -294,7 +281,7 @@ Partial Class Main
         'PeriodComboBox
         '
         Me.PeriodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.PeriodComboBox.FormattingEnabled = True
+        Me.PeriodComboBox.FormattingEnabled = true
         Me.PeriodComboBox.Location = New System.Drawing.Point(38, 29)
         Me.PeriodComboBox.Name = "PeriodComboBox"
         Me.PeriodComboBox.Size = New System.Drawing.Size(110, 20)
@@ -302,7 +289,7 @@ Partial Class Main
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
+        Me.Label7.AutoSize = true
         Me.Label7.Location = New System.Drawing.Point(3, 32)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(29, 12)
@@ -311,7 +298,7 @@ Partial Class Main
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(3, 7)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(29, 12)
@@ -320,19 +307,19 @@ Partial Class Main
         '
         'NextStep2Button
         '
-        Me.NextStep2Button.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NextStep2Button.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.NextStep2Button.Location = New System.Drawing.Point(561, 174)
         Me.NextStep2Button.Name = "NextStep2Button"
         Me.NextStep2Button.Size = New System.Drawing.Size(132, 23)
         Me.NextStep2Button.TabIndex = 18
-        Me.NextStep2Button.Text = "擷取選課資料"
-        Me.NextStep2Button.UseVisualStyleBackColor = True
+        Me.NextStep2Button.Text = "擷取選課資料(&G)"
+        Me.NextStep2Button.UseVisualStyleBackColor = true
         '
         'ResearchInstituteComboBox
         '
         Me.ResearchInstituteComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ResearchInstituteComboBox.Enabled = False
-        Me.ResearchInstituteComboBox.FormattingEnabled = True
+        Me.ResearchInstituteComboBox.Enabled = false
+        Me.ResearchInstituteComboBox.FormattingEnabled = true
         Me.ResearchInstituteComboBox.Location = New System.Drawing.Point(27, 143)
         Me.ResearchInstituteComboBox.Name = "ResearchInstituteComboBox"
         Me.ResearchInstituteComboBox.Size = New System.Drawing.Size(121, 20)
@@ -348,7 +335,7 @@ Partial Class Main
         Me.AcademicPanel.Controls.Add(Me.GradeComboBox)
         Me.AcademicPanel.Controls.Add(Me.DepartmentComboBox)
         Me.AcademicPanel.Controls.Add(Me.AcademicComboBox)
-        Me.AcademicPanel.Enabled = False
+        Me.AcademicPanel.Enabled = false
         Me.AcademicPanel.Location = New System.Drawing.Point(151, 51)
         Me.AcademicPanel.Name = "AcademicPanel"
         Me.AcademicPanel.Size = New System.Drawing.Size(173, 108)
@@ -356,7 +343,7 @@ Partial Class Main
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(4, 84)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(29, 12)
@@ -365,7 +352,7 @@ Partial Class Main
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(4, 58)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(29, 12)
@@ -374,7 +361,7 @@ Partial Class Main
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(4, 32)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(29, 12)
@@ -383,7 +370,7 @@ Partial Class Main
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(4, 7)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 12)
@@ -393,7 +380,7 @@ Partial Class Main
         'ClassComboBox
         '
         Me.ClassComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ClassComboBox.FormattingEnabled = True
+        Me.ClassComboBox.FormattingEnabled = true
         Me.ClassComboBox.Location = New System.Drawing.Point(49, 81)
         Me.ClassComboBox.Name = "ClassComboBox"
         Me.ClassComboBox.Size = New System.Drawing.Size(120, 20)
@@ -402,7 +389,7 @@ Partial Class Main
         'GradeComboBox
         '
         Me.GradeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.GradeComboBox.FormattingEnabled = True
+        Me.GradeComboBox.FormattingEnabled = true
         Me.GradeComboBox.Location = New System.Drawing.Point(49, 55)
         Me.GradeComboBox.Name = "GradeComboBox"
         Me.GradeComboBox.Size = New System.Drawing.Size(121, 20)
@@ -411,7 +398,7 @@ Partial Class Main
         'DepartmentComboBox
         '
         Me.DepartmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.DepartmentComboBox.FormattingEnabled = True
+        Me.DepartmentComboBox.FormattingEnabled = true
         Me.DepartmentComboBox.Location = New System.Drawing.Point(49, 29)
         Me.DepartmentComboBox.Name = "DepartmentComboBox"
         Me.DepartmentComboBox.Size = New System.Drawing.Size(121, 20)
@@ -420,7 +407,7 @@ Partial Class Main
         'AcademicComboBox
         '
         Me.AcademicComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.AcademicComboBox.FormattingEnabled = True
+        Me.AcademicComboBox.FormattingEnabled = true
         Me.AcademicComboBox.Location = New System.Drawing.Point(49, 3)
         Me.AcademicComboBox.Name = "AcademicComboBox"
         Me.AcademicComboBox.Size = New System.Drawing.Size(121, 20)
@@ -428,122 +415,121 @@ Partial Class Main
         '
         'TeachLangRadioButton
         '
-        Me.TeachLangRadioButton.AutoSize = True
+        Me.TeachLangRadioButton.AutoSize = true
         Me.TeachLangRadioButton.Location = New System.Drawing.Point(487, 79)
         Me.TeachLangRadioButton.Name = "TeachLangRadioButton"
         Me.TeachLangRadioButton.Size = New System.Drawing.Size(127, 16)
         Me.TeachLangRadioButton.TabIndex = 16
         Me.TeachLangRadioButton.Text = "授課語言(國語除外)"
-        Me.TeachLangRadioButton.UseVisualStyleBackColor = True
+        Me.TeachLangRadioButton.UseVisualStyleBackColor = true
         '
         'TeacherNameRadioButton
         '
-        Me.TeacherNameRadioButton.AutoSize = True
+        Me.TeacherNameRadioButton.AutoSize = true
         Me.TeacherNameRadioButton.Location = New System.Drawing.Point(487, 38)
         Me.TeacherNameRadioButton.Name = "TeacherNameRadioButton"
         Me.TeacherNameRadioButton.Size = New System.Drawing.Size(115, 16)
         Me.TeacherNameRadioButton.TabIndex = 14
         Me.TeacherNameRadioButton.Text = "教師姓名(關鍵字)"
-        Me.TeacherNameRadioButton.UseVisualStyleBackColor = True
+        Me.TeacherNameRadioButton.UseVisualStyleBackColor = true
         '
         'CourseNameRadioButton
         '
-        Me.CourseNameRadioButton.AutoSize = True
+        Me.CourseNameRadioButton.AutoSize = true
         Me.CourseNameRadioButton.Location = New System.Drawing.Point(330, 107)
         Me.CourseNameRadioButton.Name = "CourseNameRadioButton"
         Me.CourseNameRadioButton.Size = New System.Drawing.Size(115, 16)
         Me.CourseNameRadioButton.TabIndex = 12
         Me.CourseNameRadioButton.Text = "課程名稱(關鍵字)"
-        Me.CourseNameRadioButton.UseVisualStyleBackColor = True
+        Me.CourseNameRadioButton.UseVisualStyleBackColor = true
         '
         'TimeRadioButton
         '
-        Me.TimeRadioButton.AutoSize = True
+        Me.TimeRadioButton.AutoSize = true
         Me.TimeRadioButton.Location = New System.Drawing.Point(330, 35)
         Me.TimeRadioButton.Name = "TimeRadioButton"
         Me.TimeRadioButton.Size = New System.Drawing.Size(83, 16)
         Me.TimeRadioButton.TabIndex = 10
         Me.TimeRadioButton.Text = "以時間查詢"
-        Me.TimeRadioButton.UseVisualStyleBackColor = True
+        Me.TimeRadioButton.UseVisualStyleBackColor = true
         '
         'AcademicRadioButton
         '
-        Me.AcademicRadioButton.AutoSize = True
+        Me.AcademicRadioButton.AutoSize = true
         Me.AcademicRadioButton.Location = New System.Drawing.Point(151, 35)
         Me.AcademicRadioButton.Name = "AcademicRadioButton"
         Me.AcademicRadioButton.Size = New System.Drawing.Size(47, 16)
         Me.AcademicRadioButton.TabIndex = 7
         Me.AcademicRadioButton.Text = "學制"
-        Me.AcademicRadioButton.UseVisualStyleBackColor = True
+        Me.AcademicRadioButton.UseVisualStyleBackColor = true
         '
         'EducationRadioButton
         '
-        Me.EducationRadioButton.AutoSize = True
+        Me.EducationRadioButton.AutoSize = true
         Me.EducationRadioButton.Location = New System.Drawing.Point(26, 107)
         Me.EducationRadioButton.Name = "EducationRadioButton"
         Me.EducationRadioButton.Size = New System.Drawing.Size(95, 16)
         Me.EducationRadioButton.TabIndex = 4
         Me.EducationRadioButton.Text = "師資培育中心"
-        Me.EducationRadioButton.UseVisualStyleBackColor = True
+        Me.EducationRadioButton.UseVisualStyleBackColor = true
         '
         'ResearchInstituteRadioButton
         '
-        Me.ResearchInstituteRadioButton.AutoSize = True
+        Me.ResearchInstituteRadioButton.AutoSize = true
         Me.ResearchInstituteRadioButton.Location = New System.Drawing.Point(26, 125)
         Me.ResearchInstituteRadioButton.Name = "ResearchInstituteRadioButton"
         Me.ResearchInstituteRadioButton.Size = New System.Drawing.Size(59, 16)
         Me.ResearchInstituteRadioButton.TabIndex = 5
         Me.ResearchInstituteRadioButton.Text = "研究所"
-        Me.ResearchInstituteRadioButton.UseVisualStyleBackColor = True
+        Me.ResearchInstituteRadioButton.UseVisualStyleBackColor = true
         '
         'MilitaryTrainingRadioButton
         '
-        Me.MilitaryTrainingRadioButton.AutoSize = True
+        Me.MilitaryTrainingRadioButton.AutoSize = true
         Me.MilitaryTrainingRadioButton.Location = New System.Drawing.Point(26, 89)
         Me.MilitaryTrainingRadioButton.Name = "MilitaryTrainingRadioButton"
         Me.MilitaryTrainingRadioButton.Size = New System.Drawing.Size(59, 16)
         Me.MilitaryTrainingRadioButton.TabIndex = 3
         Me.MilitaryTrainingRadioButton.Text = "軍訓室"
-        Me.MilitaryTrainingRadioButton.UseVisualStyleBackColor = True
+        Me.MilitaryTrainingRadioButton.UseVisualStyleBackColor = true
         '
         'SportRadioButton
         '
-        Me.SportRadioButton.AutoSize = True
+        Me.SportRadioButton.AutoSize = true
         Me.SportRadioButton.Location = New System.Drawing.Point(26, 71)
         Me.SportRadioButton.Name = "SportRadioButton"
         Me.SportRadioButton.Size = New System.Drawing.Size(59, 16)
         Me.SportRadioButton.TabIndex = 2
         Me.SportRadioButton.Text = "體育室"
-        Me.SportRadioButton.UseVisualStyleBackColor = True
+        Me.SportRadioButton.UseVisualStyleBackColor = true
         '
         'GeneralEducationRadioButton
         '
-        Me.GeneralEducationRadioButton.AutoSize = True
+        Me.GeneralEducationRadioButton.AutoSize = true
         Me.GeneralEducationRadioButton.Location = New System.Drawing.Point(26, 53)
         Me.GeneralEducationRadioButton.Name = "GeneralEducationRadioButton"
         Me.GeneralEducationRadioButton.Size = New System.Drawing.Size(95, 16)
         Me.GeneralEducationRadioButton.TabIndex = 1
         Me.GeneralEducationRadioButton.Text = "通識教育中心"
-        Me.GeneralEducationRadioButton.UseVisualStyleBackColor = True
+        Me.GeneralEducationRadioButton.UseVisualStyleBackColor = true
         '
         'SchoolGeneralEducationRadioButton
         '
-        Me.SchoolGeneralEducationRadioButton.AutoSize = True
-        Me.SchoolGeneralEducationRadioButton.Checked = True
+        Me.SchoolGeneralEducationRadioButton.AutoSize = true
+        Me.SchoolGeneralEducationRadioButton.Checked = true
         Me.SchoolGeneralEducationRadioButton.Location = New System.Drawing.Point(26, 35)
         Me.SchoolGeneralEducationRadioButton.Name = "SchoolGeneralEducationRadioButton"
         Me.SchoolGeneralEducationRadioButton.Size = New System.Drawing.Size(71, 16)
         Me.SchoolGeneralEducationRadioButton.TabIndex = 0
-        Me.SchoolGeneralEducationRadioButton.TabStop = True
+        Me.SchoolGeneralEducationRadioButton.TabStop = true
         Me.SchoolGeneralEducationRadioButton.Text = "校際通識"
-        Me.SchoolGeneralEducationRadioButton.UseVisualStyleBackColor = True
+        Me.SchoolGeneralEducationRadioButton.UseVisualStyleBackColor = true
         '
         'FilterTabPage
         '
         Me.FilterTabPage.Controls.Add(Me.AutoSizeButton)
         Me.FilterTabPage.Controls.Add(Me.WeekPeriodGroupBox)
         Me.FilterTabPage.Controls.Add(Me.ControlItemGroupBox)
-        Me.FilterTabPage.Controls.Add(Me.OnlySelectedCourseCheckBox)
         Me.FilterTabPage.Controls.Add(Me.ClearFilterButton)
         Me.FilterTabPage.Controls.Add(Me.DoFilterButton)
         Me.FilterTabPage.Controls.Add(Me.ConfirmTabControl)
@@ -553,47 +539,45 @@ Partial Class Main
         Me.FilterTabPage.Size = New System.Drawing.Size(719, 215)
         Me.FilterTabPage.TabIndex = 1
         Me.FilterTabPage.Text = "Step2：篩選條件"
-        Me.FilterTabPage.UseVisualStyleBackColor = True
+        Me.FilterTabPage.UseVisualStyleBackColor = true
         '
         'AutoSizeButton
         '
-        Me.AutoSizeButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AutoSizeButton.Location = New System.Drawing.Point(435, 186)
+        Me.AutoSizeButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.AutoSizeButton.Location = New System.Drawing.Point(400, 186)
         Me.AutoSizeButton.Name = "AutoSizeButton"
-        Me.AutoSizeButton.Size = New System.Drawing.Size(87, 22)
+        Me.AutoSizeButton.Size = New System.Drawing.Size(104, 23)
         Me.AutoSizeButton.TabIndex = 14
-        Me.AutoSizeButton.Text = "自動調整寬度"
-        Me.AutoSizeButton.UseVisualStyleBackColor = True
+        Me.AutoSizeButton.Text = "自動調整寬度(&A)"
+        Me.AutoSizeButton.UseVisualStyleBackColor = true
         '
         'WeekPeriodGroupBox
         '
-        Me.WeekPeriodGroupBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.WeekPeriodGroupBox.Controls.Add(Me.WithNULLCheckBox)
+        Me.WeekPeriodGroupBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.WeekPeriodGroupBox.Controls.Add(Me.reverseCheckBox)
         Me.WeekPeriodGroupBox.Controls.Add(Me.WeekAndPeriodDataGridView)
         Me.WeekPeriodGroupBox.Location = New System.Drawing.Point(366, 8)
         Me.WeekPeriodGroupBox.Name = "WeekPeriodGroupBox"
         Me.WeekPeriodGroupBox.Size = New System.Drawing.Size(321, 172)
         Me.WeekPeriodGroupBox.TabIndex = 17
-        Me.WeekPeriodGroupBox.TabStop = False
+        Me.WeekPeriodGroupBox.TabStop = false
         Me.WeekPeriodGroupBox.Text = "節次篩選"
         '
-        'WithNULLCheckBox
+        'reverseCheckBox
         '
-        Me.WithNULLCheckBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.WithNULLCheckBox.AutoSize = True
-        Me.WithNULLCheckBox.Enabled = False
-        Me.WithNULLCheckBox.Location = New System.Drawing.Point(6, 149)
-        Me.WithNULLCheckBox.Name = "WithNULLCheckBox"
-        Me.WithNULLCheckBox.Size = New System.Drawing.Size(223, 16)
-        Me.WithNULLCheckBox.TabIndex = 1
-        Me.WithNULLCheckBox.Text = "(下版功能)包含其它值 (例如：無資料)"
-        Me.WithNULLCheckBox.UseVisualStyleBackColor = True
+        Me.reverseCheckBox.AutoSize = true
+        Me.reverseCheckBox.Location = New System.Drawing.Point(58, 0)
+        Me.reverseCheckBox.Name = "reverseCheckBox"
+        Me.reverseCheckBox.Size = New System.Drawing.Size(132, 16)
+        Me.reverseCheckBox.TabIndex = 1
+        Me.reverseCheckBox.Text = "不包含上述選定時段"
+        Me.reverseCheckBox.UseVisualStyleBackColor = true
         '
         'WeekAndPeriodDataGridView
         '
-        Me.WeekAndPeriodDataGridView.AllowUserToAddRows = False
-        Me.WeekAndPeriodDataGridView.AllowUserToDeleteRows = False
-        Me.WeekAndPeriodDataGridView.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.WeekAndPeriodDataGridView.AllowUserToAddRows = false
+        Me.WeekAndPeriodDataGridView.AllowUserToDeleteRows = false
+        Me.WeekAndPeriodDataGridView.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
         Me.WeekAndPeriodDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.WeekAndPeriodDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.WeekAndPeriodDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -601,17 +585,19 @@ Partial Class Main
         Me.WeekAndPeriodDataGridView.GridColor = System.Drawing.SystemColors.Control
         Me.WeekAndPeriodDataGridView.Location = New System.Drawing.Point(11, 17)
         Me.WeekAndPeriodDataGridView.Name = "WeekAndPeriodDataGridView"
+        Me.WeekAndPeriodDataGridView.RowHeadersVisible = false
         Me.WeekAndPeriodDataGridView.RowTemplate.Height = 24
-        Me.WeekAndPeriodDataGridView.Size = New System.Drawing.Size(298, 126)
+        Me.WeekAndPeriodDataGridView.Size = New System.Drawing.Size(298, 149)
         Me.WeekAndPeriodDataGridView.TabIndex = 0
         '
         '節次Column
         '
         Me.節次Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.節次Column.Frozen = True
+        Me.節次Column.Frozen = true
         Me.節次Column.HeaderText = "節次"
         Me.節次Column.Name = "節次Column"
-        Me.節次Column.ReadOnly = True
+        Me.節次Column.ReadOnly = true
+        Me.節次Column.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.節次Column.Width = 54
         '
         '日Column
@@ -679,13 +665,13 @@ Partial Class Main
         '
         'ControlItemGroupBox
         '
-        Me.ControlItemGroupBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.ControlItemGroupBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
         Me.ControlItemGroupBox.Controls.Add(Me.KeywordSplitContainer)
         Me.ControlItemGroupBox.Location = New System.Drawing.Point(21, 8)
         Me.ControlItemGroupBox.Name = "ControlItemGroupBox"
         Me.ControlItemGroupBox.Size = New System.Drawing.Size(339, 172)
         Me.ControlItemGroupBox.TabIndex = 16
-        Me.ControlItemGroupBox.TabStop = False
+        Me.ControlItemGroupBox.TabStop = false
         Me.ControlItemGroupBox.Text = "篩選項目"
         '
         'KeywordSplitContainer
@@ -703,17 +689,17 @@ Partial Class Main
         Me.KeywordSplitContainer.Panel2.Controls.Add(Me.KeywordFilterListBox)
         Me.KeywordSplitContainer.Panel2.Controls.Add(Me.KeywordFilterButton)
         Me.KeywordSplitContainer.Panel2.Controls.Add(Me.KeywordFilterRadioButton)
-        Me.KeywordSplitContainer.Panel2.Enabled = False
+        Me.KeywordSplitContainer.Panel2.Enabled = false
         Me.KeywordSplitContainer.Size = New System.Drawing.Size(333, 151)
         Me.KeywordSplitContainer.SplitterDistance = 124
         Me.KeywordSplitContainer.TabIndex = 15
         '
         'ControlListBox
         '
-        Me.ControlListBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ControlListBox.FormattingEnabled = True
+        Me.ControlListBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.ControlListBox.FormattingEnabled = true
         Me.ControlListBox.ItemHeight = 12
         Me.ControlListBox.Location = New System.Drawing.Point(0, 0)
         Me.ControlListBox.Name = "ControlListBox"
@@ -722,10 +708,10 @@ Partial Class Main
         '
         'KeywordFilterListBox
         '
-        Me.KeywordFilterListBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KeywordFilterListBox.FormattingEnabled = True
+        Me.KeywordFilterListBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.KeywordFilterListBox.FormattingEnabled = true
         Me.KeywordFilterListBox.ItemHeight = 12
         Me.KeywordFilterListBox.Location = New System.Drawing.Point(12, 33)
         Me.KeywordFilterListBox.Name = "KeywordFilterListBox"
@@ -734,58 +720,46 @@ Partial Class Main
         '
         'KeywordFilterButton
         '
-        Me.KeywordFilterButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.KeywordFilterButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.KeywordFilterButton.Location = New System.Drawing.Point(12, 119)
         Me.KeywordFilterButton.Name = "KeywordFilterButton"
         Me.KeywordFilterButton.Size = New System.Drawing.Size(182, 23)
         Me.KeywordFilterButton.TabIndex = 5
-        Me.KeywordFilterButton.Text = "開啟 關鍵字視窗"
-        Me.KeywordFilterButton.UseVisualStyleBackColor = True
+        Me.KeywordFilterButton.Text = "開啟 關鍵字視窗(&O)"
+        Me.KeywordFilterButton.UseVisualStyleBackColor = true
         '
         'KeywordFilterRadioButton
         '
-        Me.KeywordFilterRadioButton.AutoSize = True
-        Me.KeywordFilterRadioButton.Checked = True
+        Me.KeywordFilterRadioButton.AutoSize = true
+        Me.KeywordFilterRadioButton.Checked = true
         Me.KeywordFilterRadioButton.Location = New System.Drawing.Point(12, 8)
         Me.KeywordFilterRadioButton.Name = "KeywordFilterRadioButton"
         Me.KeywordFilterRadioButton.Size = New System.Drawing.Size(83, 16)
         Me.KeywordFilterRadioButton.TabIndex = 0
-        Me.KeywordFilterRadioButton.TabStop = True
+        Me.KeywordFilterRadioButton.TabStop = true
         Me.KeywordFilterRadioButton.Text = "輸入關鍵字"
-        Me.KeywordFilterRadioButton.UseVisualStyleBackColor = True
-        '
-        'OnlySelectedCourseCheckBox
-        '
-        Me.OnlySelectedCourseCheckBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.OnlySelectedCourseCheckBox.AutoSize = True
-        Me.OnlySelectedCourseCheckBox.Enabled = False
-        Me.OnlySelectedCourseCheckBox.Location = New System.Drawing.Point(10, 191)
-        Me.OnlySelectedCourseCheckBox.Name = "OnlySelectedCourseCheckBox"
-        Me.OnlySelectedCourseCheckBox.Size = New System.Drawing.Size(212, 16)
-        Me.OnlySelectedCourseCheckBox.TabIndex = 13
-        Me.OnlySelectedCourseCheckBox.Text = "(下版功能)只針對選定的課程做篩選"
-        Me.OnlySelectedCourseCheckBox.UseVisualStyleBackColor = True
+        Me.KeywordFilterRadioButton.UseVisualStyleBackColor = true
         '
         'ClearFilterButton
         '
-        Me.ClearFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ClearFilterButton.Location = New System.Drawing.Point(609, 186)
+        Me.ClearFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.ClearFilterButton.Location = New System.Drawing.Point(591, 186)
         Me.ClearFilterButton.Name = "ClearFilterButton"
-        Me.ClearFilterButton.Size = New System.Drawing.Size(85, 23)
+        Me.ClearFilterButton.Size = New System.Drawing.Size(103, 23)
         Me.ClearFilterButton.TabIndex = 14
-        Me.ClearFilterButton.Text = "清除篩選條件"
-        Me.ClearFilterButton.UseVisualStyleBackColor = True
+        Me.ClearFilterButton.Text = "清除篩選條件(&C)"
+        Me.ClearFilterButton.UseVisualStyleBackColor = true
         '
         'DoFilterButton
         '
-        Me.DoFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DoFilterButton.Location = New System.Drawing.Point(528, 186)
+        Me.DoFilterButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.DoFilterButton.Location = New System.Drawing.Point(510, 186)
         Me.DoFilterButton.Name = "DoFilterButton"
         Me.DoFilterButton.Size = New System.Drawing.Size(75, 23)
         Me.DoFilterButton.TabIndex = 1
-        Me.DoFilterButton.Text = "開始篩選"
-        Me.DoFilterButton.UseVisualStyleBackColor = True
+        Me.DoFilterButton.Text = "開始篩選(&F)"
+        Me.DoFilterButton.UseVisualStyleBackColor = true
         '
         'ConfirmTabControl
         '
@@ -793,13 +767,13 @@ Partial Class Main
         Me.ConfirmTabControl.Controls.Add(Me.PeriodTabPage)
         Me.ConfirmTabControl.Controls.Add(Me.PopularityTabPage)
         Me.ConfirmTabControl.Controls.Add(Me.FilterInformationTabPage)
-        Me.ConfirmTabControl.Enabled = False
-        Me.ConfirmTabControl.Location = New System.Drawing.Point(689, 10)
+        Me.ConfirmTabControl.Enabled = false
+        Me.ConfirmTabControl.Location = New System.Drawing.Point(700, 8)
         Me.ConfirmTabControl.Name = "ConfirmTabControl"
         Me.ConfirmTabControl.SelectedIndex = 0
         Me.ConfirmTabControl.Size = New System.Drawing.Size(642, 174)
         Me.ConfirmTabControl.TabIndex = 0
-        Me.ConfirmTabControl.Visible = False
+        Me.ConfirmTabControl.Visible = false
         '
         'SubFilterTabPage
         '
@@ -812,37 +786,37 @@ Partial Class Main
         Me.SubFilterTabPage.Size = New System.Drawing.Size(634, 148)
         Me.SubFilterTabPage.TabIndex = 1
         Me.SubFilterTabPage.Text = "請選擇條件"
-        Me.SubFilterTabPage.UseVisualStyleBackColor = True
+        Me.SubFilterTabPage.UseVisualStyleBackColor = true
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
+        Me.Label10.AutoSize = true
         Me.Label10.Location = New System.Drawing.Point(3, 33)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(17, 60)
         Me.Label10.TabIndex = 2
-        Me.Label10.Text = "隱" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "藏" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "的" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "元" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "件"
+        Me.Label10.Text = "隱"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"藏"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"的"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"元"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"件"
         '
         'ChooseValueCheckedListBox
         '
-        Me.ChooseValueCheckedListBox.Enabled = False
-        Me.ChooseValueCheckedListBox.FormattingEnabled = True
+        Me.ChooseValueCheckedListBox.Enabled = false
+        Me.ChooseValueCheckedListBox.FormattingEnabled = true
         Me.ChooseValueCheckedListBox.Location = New System.Drawing.Point(124, 41)
         Me.ChooseValueCheckedListBox.Name = "ChooseValueCheckedListBox"
         Me.ChooseValueCheckedListBox.Size = New System.Drawing.Size(252, 21)
         Me.ChooseValueCheckedListBox.TabIndex = 17
-        Me.ChooseValueCheckedListBox.Visible = False
+        Me.ChooseValueCheckedListBox.Visible = false
         '
         'ChooseValueRadioButton
         '
-        Me.ChooseValueRadioButton.AutoSize = True
+        Me.ChooseValueRadioButton.AutoSize = true
         Me.ChooseValueRadioButton.Location = New System.Drawing.Point(23, 46)
         Me.ChooseValueRadioButton.Name = "ChooseValueRadioButton"
         Me.ChooseValueRadioButton.Size = New System.Drawing.Size(95, 16)
         Me.ChooseValueRadioButton.TabIndex = 16
         Me.ChooseValueRadioButton.Text = "選擇以下的值"
-        Me.ChooseValueRadioButton.UseVisualStyleBackColor = True
-        Me.ChooseValueRadioButton.Visible = False
+        Me.ChooseValueRadioButton.UseVisualStyleBackColor = true
+        Me.ChooseValueRadioButton.Visible = false
         '
         'PeriodTabPage
         '
@@ -852,7 +826,7 @@ Partial Class Main
         Me.PeriodTabPage.Size = New System.Drawing.Size(634, 148)
         Me.PeriodTabPage.TabIndex = 2
         Me.PeriodTabPage.Text = "節次篩選"
-        Me.PeriodTabPage.UseVisualStyleBackColor = True
+        Me.PeriodTabPage.UseVisualStyleBackColor = true
         '
         'PopularityTabPage
         '
@@ -865,7 +839,7 @@ Partial Class Main
         Me.PopularityTabPage.Size = New System.Drawing.Size(634, 148)
         Me.PopularityTabPage.TabIndex = 3
         Me.PopularityTabPage.Text = "人數篩選"
-        Me.PopularityTabPage.UseVisualStyleBackColor = True
+        Me.PopularityTabPage.UseVisualStyleBackColor = true
         '
         'ControlIntPanel
         '
@@ -879,17 +853,17 @@ Partial Class Main
         '
         'CompareIntCheckBox
         '
-        Me.CompareIntCheckBox.AutoSize = True
+        Me.CompareIntCheckBox.AutoSize = true
         Me.CompareIntCheckBox.Location = New System.Drawing.Point(3, 3)
         Me.CompareIntCheckBox.Name = "CompareIntCheckBox"
         Me.CompareIntCheckBox.Size = New System.Drawing.Size(72, 16)
         Me.CompareIntCheckBox.TabIndex = 4
         Me.CompareIntCheckBox.Text = "數值比較"
-        Me.CompareIntCheckBox.UseVisualStyleBackColor = True
+        Me.CompareIntCheckBox.UseVisualStyleBackColor = true
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
+        Me.Label11.AutoSize = true
         Me.Label11.Location = New System.Drawing.Point(68, 107)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(129, 12)
@@ -905,12 +879,12 @@ Partial Class Main
         Me.CompareIntGroupBox.Controls.Add(Me.LessThanOrEqualToRadioButton)
         Me.CompareIntGroupBox.Controls.Add(Me.GreaterThanOrEqualToRadioButton)
         Me.CompareIntGroupBox.Controls.Add(Me.GreaterThanRadioButton)
-        Me.CompareIntGroupBox.Enabled = False
+        Me.CompareIntGroupBox.Enabled = false
         Me.CompareIntGroupBox.Location = New System.Drawing.Point(3, 12)
         Me.CompareIntGroupBox.Name = "CompareIntGroupBox"
         Me.CompareIntGroupBox.Size = New System.Drawing.Size(194, 92)
         Me.CompareIntGroupBox.TabIndex = 1
-        Me.CompareIntGroupBox.TabStop = False
+        Me.CompareIntGroupBox.TabStop = false
         '
         'CompareIntTextBox
         '
@@ -921,7 +895,7 @@ Partial Class Main
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
+        Me.Label13.AutoSize = true
         Me.Label13.Location = New System.Drawing.Point(6, 70)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(65, 12)
@@ -930,69 +904,69 @@ Partial Class Main
         '
         'LessThanRadioButton
         '
-        Me.LessThanRadioButton.AutoSize = True
-        Me.LessThanRadioButton.Checked = True
+        Me.LessThanRadioButton.AutoSize = true
+        Me.LessThanRadioButton.Checked = true
         Me.LessThanRadioButton.Location = New System.Drawing.Point(6, 21)
         Me.LessThanRadioButton.Name = "LessThanRadioButton"
         Me.LessThanRadioButton.Size = New System.Drawing.Size(47, 16)
         Me.LessThanRadioButton.TabIndex = 0
-        Me.LessThanRadioButton.TabStop = True
+        Me.LessThanRadioButton.TabStop = true
         Me.LessThanRadioButton.Text = "小於"
-        Me.LessThanRadioButton.UseVisualStyleBackColor = True
+        Me.LessThanRadioButton.UseVisualStyleBackColor = true
         '
         'EqualToRadioButton
         '
-        Me.EqualToRadioButton.AutoSize = True
+        Me.EqualToRadioButton.AutoSize = true
         Me.EqualToRadioButton.Location = New System.Drawing.Point(136, 31)
         Me.EqualToRadioButton.Name = "EqualToRadioButton"
         Me.EqualToRadioButton.Size = New System.Drawing.Size(47, 16)
         Me.EqualToRadioButton.TabIndex = 0
         Me.EqualToRadioButton.Text = "等於"
-        Me.EqualToRadioButton.UseVisualStyleBackColor = True
+        Me.EqualToRadioButton.UseVisualStyleBackColor = true
         '
         'LessThanOrEqualToRadioButton
         '
-        Me.LessThanOrEqualToRadioButton.AutoSize = True
+        Me.LessThanOrEqualToRadioButton.AutoSize = true
         Me.LessThanOrEqualToRadioButton.Location = New System.Drawing.Point(53, 21)
         Me.LessThanOrEqualToRadioButton.Name = "LessThanOrEqualToRadioButton"
         Me.LessThanOrEqualToRadioButton.Size = New System.Drawing.Size(71, 16)
         Me.LessThanOrEqualToRadioButton.TabIndex = 0
         Me.LessThanOrEqualToRadioButton.Text = "小於等於"
-        Me.LessThanOrEqualToRadioButton.UseVisualStyleBackColor = True
+        Me.LessThanOrEqualToRadioButton.UseVisualStyleBackColor = true
         '
         'GreaterThanOrEqualToRadioButton
         '
-        Me.GreaterThanOrEqualToRadioButton.AutoSize = True
+        Me.GreaterThanOrEqualToRadioButton.AutoSize = true
         Me.GreaterThanOrEqualToRadioButton.Location = New System.Drawing.Point(53, 43)
         Me.GreaterThanOrEqualToRadioButton.Name = "GreaterThanOrEqualToRadioButton"
         Me.GreaterThanOrEqualToRadioButton.Size = New System.Drawing.Size(71, 16)
         Me.GreaterThanOrEqualToRadioButton.TabIndex = 0
         Me.GreaterThanOrEqualToRadioButton.Text = "大於等於"
-        Me.GreaterThanOrEqualToRadioButton.UseVisualStyleBackColor = True
+        Me.GreaterThanOrEqualToRadioButton.UseVisualStyleBackColor = true
         '
         'GreaterThanRadioButton
         '
-        Me.GreaterThanRadioButton.AutoSize = True
+        Me.GreaterThanRadioButton.AutoSize = true
         Me.GreaterThanRadioButton.Location = New System.Drawing.Point(6, 43)
         Me.GreaterThanRadioButton.Name = "GreaterThanRadioButton"
         Me.GreaterThanRadioButton.Size = New System.Drawing.Size(47, 16)
         Me.GreaterThanRadioButton.TabIndex = 0
         Me.GreaterThanRadioButton.Text = "大於"
-        Me.GreaterThanRadioButton.UseVisualStyleBackColor = True
+        Me.GreaterThanRadioButton.UseVisualStyleBackColor = true
         '
         'Compare2IntCheckBox
         '
-        Me.Compare2IntCheckBox.AutoSize = True
+        Me.Compare2IntCheckBox.AutoSize = true
         Me.Compare2IntCheckBox.Location = New System.Drawing.Point(288, 14)
         Me.Compare2IntCheckBox.Name = "Compare2IntCheckBox"
         Me.Compare2IntCheckBox.Size = New System.Drawing.Size(171, 16)
         Me.Compare2IntCheckBox.TabIndex = 6
         Me.Compare2IntCheckBox.Text = "也包括  選上人數>人數限制 "
-        Me.Compare2IntCheckBox.UseVisualStyleBackColor = True
+        Me.Compare2IntCheckBox.UseVisualStyleBackColor = true
         '
         'ControlIntListBox
         '
-        Me.ControlIntListBox.FormattingEnabled = True
+        Me.ControlIntListBox.FormattingEnabled = true
         Me.ControlIntListBox.ItemHeight = 12
         Me.ControlIntListBox.Items.AddRange(New Object() {"選上人數", "人數限制", "剩餘空位"})
         Me.ControlIntListBox.Location = New System.Drawing.Point(6, 11)
@@ -1011,20 +985,20 @@ Partial Class Main
         Me.FilterInformationTabPage.Size = New System.Drawing.Size(634, 148)
         Me.FilterInformationTabPage.TabIndex = 0
         Me.FilterInformationTabPage.Text = "篩選相關資訊"
-        Me.FilterInformationTabPage.UseVisualStyleBackColor = True
+        Me.FilterInformationTabPage.UseVisualStyleBackColor = true
         '
         'ControlFilterDataGridView
         '
-        Me.ControlFilterDataGridView.AllowUserToAddRows = False
-        Me.ControlFilterDataGridView.AllowUserToDeleteRows = False
-        Me.ControlFilterDataGridView.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.ControlFilterDataGridView.AllowUserToAddRows = false
+        Me.ControlFilterDataGridView.AllowUserToDeleteRows = false
+        Me.ControlFilterDataGridView.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
         Me.ControlFilterDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.ControlFilterDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ControlFilterDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.選擇Column, Me.選項Column, Me.值Column})
         Me.ControlFilterDataGridView.Location = New System.Drawing.Point(8, 29)
         Me.ControlFilterDataGridView.Name = "ControlFilterDataGridView"
-        Me.ControlFilterDataGridView.ReadOnly = True
+        Me.ControlFilterDataGridView.ReadOnly = true
         Me.ControlFilterDataGridView.RowTemplate.Height = 24
         Me.ControlFilterDataGridView.Size = New System.Drawing.Size(620, 113)
         Me.ControlFilterDataGridView.TabIndex = 13
@@ -1034,7 +1008,7 @@ Partial Class Main
         Me.選擇Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
         Me.選擇Column.HeaderText = "選擇"
         Me.選擇Column.Name = "選擇Column"
-        Me.選擇Column.ReadOnly = True
+        Me.選擇Column.ReadOnly = true
         Me.選擇Column.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.選擇Column.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.選擇Column.Width = 54
@@ -1044,7 +1018,7 @@ Partial Class Main
         Me.選項Column.HeaderText = "選項"
         Me.選項Column.MinimumWidth = 10
         Me.選項Column.Name = "選項Column"
-        Me.選項Column.ReadOnly = True
+        Me.選項Column.ReadOnly = true
         Me.選項Column.Width = 51
         '
         '值Column
@@ -1052,11 +1026,11 @@ Partial Class Main
         Me.值Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.值Column.HeaderText = "值"
         Me.值Column.Name = "值Column"
-        Me.值Column.ReadOnly = True
+        Me.值Column.ReadOnly = true
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
+        Me.Label9.AutoSize = true
         Me.Label9.Location = New System.Drawing.Point(6, 6)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(149, 12)
@@ -1065,7 +1039,7 @@ Partial Class Main
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
+        Me.Label8.AutoSize = true
         Me.Label8.Location = New System.Drawing.Point(400, 6)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(185, 12)
@@ -1081,7 +1055,7 @@ Partial Class Main
         Me.CourseDetailTabPage.Size = New System.Drawing.Size(719, 215)
         Me.CourseDetailTabPage.TabIndex = 2
         Me.CourseDetailTabPage.Text = "課程網頁"
-        Me.CourseDetailTabPage.UseVisualStyleBackColor = True
+        Me.CourseDetailTabPage.UseVisualStyleBackColor = true
         '
         'CourseDetailWebBrowser
         '
@@ -1094,7 +1068,7 @@ Partial Class Main
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 12)
@@ -1113,7 +1087,7 @@ Partial Class Main
         'StatusLabel
         '
         Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(62, 17)
+        Me.StatusLabel.Size = New System.Drawing.Size(61, 17)
         Me.StatusLabel.Text = "<狀態列>"
         '
         'WorkingToolStripProgressBar
@@ -1121,23 +1095,23 @@ Partial Class Main
         Me.WorkingToolStripProgressBar.Name = "WorkingToolStripProgressBar"
         Me.WorkingToolStripProgressBar.Size = New System.Drawing.Size(100, 16)
         Me.WorkingToolStripProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee
-        Me.WorkingToolStripProgressBar.Visible = False
+        Me.WorkingToolStripProgressBar.Visible = false
         '
         'AuthorLinkLabel
         '
-        Me.AuthorLinkLabel.AutoSize = True
+        Me.AuthorLinkLabel.AutoSize = true
         Me.AuthorLinkLabel.LinkArea = New System.Windows.Forms.LinkArea(0, 23)
         Me.AuthorLinkLabel.Location = New System.Drawing.Point(518, 9)
         Me.AuthorLinkLabel.Name = "AuthorLinkLabel"
-        Me.AuthorLinkLabel.Size = New System.Drawing.Size(107, 12)
+        Me.AuthorLinkLabel.Size = New System.Drawing.Size(109, 12)
         Me.AuthorLinkLabel.TabIndex = 10
-        Me.AuthorLinkLabel.TabStop = True
-        Me.AuthorLinkLabel.Text = "http://tomshare.net.ru/"
+        Me.AuthorLinkLabel.TabStop = true
+        Me.AuthorLinkLabel.Text = "http://tomshare.idv.tw/"
         '
         'AuthorLabel
         '
-        Me.AuthorLabel.AutoSize = True
-        Me.AuthorLabel.Location = New System.Drawing.Point(438, 9)
+        Me.AuthorLabel.AutoSize = true
+        Me.AuthorLabel.Location = New System.Drawing.Point(443, 9)
         Me.AuthorLabel.Name = "AuthorLabel"
         Me.AuthorLabel.Size = New System.Drawing.Size(77, 12)
         Me.AuthorLabel.TabIndex = 11
@@ -1153,7 +1127,7 @@ Partial Class Main
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
+        Me.Label12.AutoSize = true
         Me.Label12.Location = New System.Drawing.Point(171, 7)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(185, 12)
@@ -1164,10 +1138,10 @@ Partial Class Main
         '
         Me.TryUpdateButton.Location = New System.Drawing.Point(357, 2)
         Me.TryUpdateButton.Name = "TryUpdateButton"
-        Me.TryUpdateButton.Size = New System.Drawing.Size(75, 23)
+        Me.TryUpdateButton.Size = New System.Drawing.Size(80, 23)
         Me.TryUpdateButton.TabIndex = 13
-        Me.TryUpdateButton.Text = "嘗試更新"
-        Me.TryUpdateButton.UseVisualStyleBackColor = True
+        Me.TryUpdateButton.Text = "嘗試更新(&R)"
+        Me.TryUpdateButton.UseVisualStyleBackColor = true
         '
         'TabPage5
         '
@@ -1178,7 +1152,7 @@ Partial Class Main
         Me.TabPage5.Size = New System.Drawing.Size(719, 272)
         Me.TabPage5.TabIndex = 2
         Me.TabPage5.Text = "學校網頁"
-        Me.TabPage5.UseVisualStyleBackColor = True
+        Me.TabPage5.UseVisualStyleBackColor = true
         '
         'CourseWebBrowser
         '
@@ -1189,7 +1163,7 @@ Partial Class Main
         Me.CourseWebBrowser.Size = New System.Drawing.Size(713, 266)
         Me.CourseWebBrowser.TabIndex = 2
         Me.CourseWebBrowser.Url = New System.Uri("http://course.chu.edu.tw", System.UriKind.Absolute)
-        Me.CourseWebBrowser.WebBrowserShortcutsEnabled = False
+        Me.CourseWebBrowser.WebBrowserShortcutsEnabled = false
         '
         'TabPage9
         '
@@ -1200,17 +1174,18 @@ Partial Class Main
         Me.TabPage9.Size = New System.Drawing.Size(719, 272)
         Me.TabPage9.TabIndex = 4
         Me.TabPage9.Text = "篩選結果"
-        Me.TabPage9.UseVisualStyleBackColor = True
+        Me.TabPage9.UseVisualStyleBackColor = true
         '
         'ResultDataGridView2
         '
-        Me.ResultDataGridView2.AllowUserToAddRows = False
-        Me.ResultDataGridView2.AllowUserToDeleteRows = False
+        Me.ResultDataGridView2.AllowUserToAddRows = false
+        Me.ResultDataGridView2.AllowUserToDeleteRows = false
         Me.ResultDataGridView2.BackgroundColor = System.Drawing.Color.White
         Me.ResultDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ResultDataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ResultDataGridView2.Location = New System.Drawing.Point(3, 3)
         Me.ResultDataGridView2.Name = "ResultDataGridView2"
+        Me.ResultDataGridView2.RowHeadersVisible = false
         Me.ResultDataGridView2.RowTemplate.Height = 24
         Me.ResultDataGridView2.Size = New System.Drawing.Size(713, 266)
         Me.ResultDataGridView2.TabIndex = 1
@@ -1224,18 +1199,19 @@ Partial Class Main
         Me.TabPage2.Size = New System.Drawing.Size(719, 272)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "選課清單"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.TabPage2.UseVisualStyleBackColor = true
         '
         'ResultDataGridView
         '
-        Me.ResultDataGridView.AllowUserToAddRows = False
-        Me.ResultDataGridView.AllowUserToDeleteRows = False
+        Me.ResultDataGridView.AllowUserToAddRows = false
+        Me.ResultDataGridView.AllowUserToDeleteRows = false
         Me.ResultDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.ResultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ResultDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.選取Column, Me.時段Column, Me.ClassIdColumn, Me.開課系所Column, Me.ClassNameColumn, Me.課程大綱Column, Me.LangColumn, Me.ClassTypeColumn, Me.ClassScoreColumn, Me.ClassTimeColumn, Me.WeekColumn, Me.SectionsColumn, Me.ClassroomColumn, Me.PupularityMaxColumn, Me.PupularityNowColumn, Me.剩下名額Column, Me.TeacherColumn, Me.課程連結Column, Me.NoteColumn})
         Me.ResultDataGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ResultDataGridView.Location = New System.Drawing.Point(3, 3)
         Me.ResultDataGridView.Name = "ResultDataGridView"
+        Me.ResultDataGridView.RowHeadersVisible = false
         Me.ResultDataGridView.RowTemplate.Height = 24
         Me.ResultDataGridView.Size = New System.Drawing.Size(713, 266)
         Me.ResultDataGridView.TabIndex = 0
@@ -1244,7 +1220,7 @@ Partial Class Main
         '
         Me.選取Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.選取Column.FalseValue = "False"
-        Me.選取Column.Frozen = True
+        Me.選取Column.Frozen = true
         Me.選取Column.HeaderText = "選取"
         Me.選取Column.Name = "選取Column"
         Me.選取Column.TrueValue = "True"
@@ -1253,10 +1229,10 @@ Partial Class Main
         '時段Column
         '
         Me.時段Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
-        Me.時段Column.Frozen = True
+        Me.時段Column.Frozen = true
         Me.時段Column.HeaderText = "時段"
         Me.時段Column.Name = "時段Column"
-        Me.時段Column.ReadOnly = True
+        Me.時段Column.ReadOnly = true
         Me.時段Column.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.時段Column.ToolTipText = "標記不同時段的課程。"
         Me.時段Column.Width = 5
@@ -1264,10 +1240,10 @@ Partial Class Main
         'ClassIdColumn
         '
         Me.ClassIdColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
-        Me.ClassIdColumn.Frozen = True
+        Me.ClassIdColumn.Frozen = true
         Me.ClassIdColumn.HeaderText = "課號"
         Me.ClassIdColumn.Name = "ClassIdColumn"
-        Me.ClassIdColumn.ReadOnly = True
+        Me.ClassIdColumn.ReadOnly = true
         Me.ClassIdColumn.ToolTipText = "按一下這裡即可排序"
         Me.ClassIdColumn.Width = 5
         '
@@ -1276,7 +1252,7 @@ Partial Class Main
         Me.開課系所Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.開課系所Column.HeaderText = "開課系所"
         Me.開課系所Column.Name = "開課系所Column"
-        Me.開課系所Column.ReadOnly = True
+        Me.開課系所Column.ReadOnly = true
         Me.開課系所Column.ToolTipText = "按一下這裡即可排序"
         Me.開課系所Column.Width = 5
         '
@@ -1284,7 +1260,7 @@ Partial Class Main
         '
         Me.ClassNameColumn.HeaderText = "課程名稱"
         Me.ClassNameColumn.Name = "ClassNameColumn"
-        Me.ClassNameColumn.ReadOnly = True
+        Me.ClassNameColumn.ReadOnly = true
         Me.ClassNameColumn.ToolTipText = "按一下這裡即可排序"
         '
         '課程大綱Column
@@ -1293,7 +1269,7 @@ Partial Class Main
         Me.課程大綱Column.HeaderText = "課程大綱"
         Me.課程大綱Column.MinimumWidth = 37
         Me.課程大綱Column.Name = "課程大綱Column"
-        Me.課程大綱Column.ReadOnly = True
+        Me.課程大綱Column.ReadOnly = true
         Me.課程大綱Column.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.課程大綱Column.VisitedLinkColor = System.Drawing.Color.Purple
         Me.課程大綱Column.Width = 37
@@ -1303,7 +1279,7 @@ Partial Class Main
         Me.LangColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.LangColumn.HeaderText = "授課語言"
         Me.LangColumn.Name = "LangColumn"
-        Me.LangColumn.ReadOnly = True
+        Me.LangColumn.ReadOnly = true
         Me.LangColumn.ToolTipText = "按一下這裡即可排序"
         Me.LangColumn.Width = 5
         '
@@ -1312,7 +1288,7 @@ Partial Class Main
         Me.ClassTypeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.ClassTypeColumn.HeaderText = "選別"
         Me.ClassTypeColumn.Name = "ClassTypeColumn"
-        Me.ClassTypeColumn.ReadOnly = True
+        Me.ClassTypeColumn.ReadOnly = true
         Me.ClassTypeColumn.ToolTipText = "按一下這裡即可排序"
         Me.ClassTypeColumn.Width = 5
         '
@@ -1321,7 +1297,7 @@ Partial Class Main
         Me.ClassScoreColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.ClassScoreColumn.HeaderText = "學分"
         Me.ClassScoreColumn.Name = "ClassScoreColumn"
-        Me.ClassScoreColumn.ReadOnly = True
+        Me.ClassScoreColumn.ReadOnly = true
         Me.ClassScoreColumn.ToolTipText = "按一下這裡即可排序"
         Me.ClassScoreColumn.Width = 5
         '
@@ -1330,7 +1306,7 @@ Partial Class Main
         Me.ClassTimeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.ClassTimeColumn.HeaderText = "時數"
         Me.ClassTimeColumn.Name = "ClassTimeColumn"
-        Me.ClassTimeColumn.ReadOnly = True
+        Me.ClassTimeColumn.ReadOnly = true
         Me.ClassTimeColumn.ToolTipText = "按一下這裡即可排序"
         Me.ClassTimeColumn.Width = 5
         '
@@ -1339,7 +1315,7 @@ Partial Class Main
         Me.WeekColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.WeekColumn.HeaderText = "星期"
         Me.WeekColumn.Name = "WeekColumn"
-        Me.WeekColumn.ReadOnly = True
+        Me.WeekColumn.ReadOnly = true
         Me.WeekColumn.ToolTipText = "按一下這裡即可排序"
         Me.WeekColumn.Width = 5
         '
@@ -1348,7 +1324,7 @@ Partial Class Main
         Me.SectionsColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.SectionsColumn.HeaderText = "節次"
         Me.SectionsColumn.Name = "SectionsColumn"
-        Me.SectionsColumn.ReadOnly = True
+        Me.SectionsColumn.ReadOnly = true
         Me.SectionsColumn.ToolTipText = "按一下這裡即可排序"
         Me.SectionsColumn.Width = 5
         '
@@ -1357,7 +1333,7 @@ Partial Class Main
         Me.ClassroomColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.ClassroomColumn.HeaderText = "教室"
         Me.ClassroomColumn.Name = "ClassroomColumn"
-        Me.ClassroomColumn.ReadOnly = True
+        Me.ClassroomColumn.ReadOnly = true
         Me.ClassroomColumn.ToolTipText = "按一下這裡即可排序"
         Me.ClassroomColumn.Width = 5
         '
@@ -1366,7 +1342,7 @@ Partial Class Main
         Me.PupularityMaxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.PupularityMaxColumn.HeaderText = "人數限制"
         Me.PupularityMaxColumn.Name = "PupularityMaxColumn"
-        Me.PupularityMaxColumn.ReadOnly = True
+        Me.PupularityMaxColumn.ReadOnly = true
         Me.PupularityMaxColumn.ToolTipText = "按一下這裡即可排序"
         Me.PupularityMaxColumn.Width = 5
         '
@@ -1375,7 +1351,7 @@ Partial Class Main
         Me.PupularityNowColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.PupularityNowColumn.HeaderText = "選上人數"
         Me.PupularityNowColumn.Name = "PupularityNowColumn"
-        Me.PupularityNowColumn.ReadOnly = True
+        Me.PupularityNowColumn.ReadOnly = true
         Me.PupularityNowColumn.ToolTipText = "按一下這裡即可排序"
         Me.PupularityNowColumn.Width = 5
         '
@@ -1384,7 +1360,7 @@ Partial Class Main
         Me.剩下名額Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.剩下名額Column.HeaderText = "剩下名額"
         Me.剩下名額Column.Name = "剩下名額Column"
-        Me.剩下名額Column.ReadOnly = True
+        Me.剩下名額Column.ReadOnly = true
         Me.剩下名額Column.ToolTipText = "按一下這裡即可排序"
         Me.剩下名額Column.Width = 5
         '
@@ -1393,7 +1369,7 @@ Partial Class Main
         Me.TeacherColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader
         Me.TeacherColumn.HeaderText = "教師"
         Me.TeacherColumn.Name = "TeacherColumn"
-        Me.TeacherColumn.ReadOnly = True
+        Me.TeacherColumn.ReadOnly = true
         Me.TeacherColumn.ToolTipText = "按一下這裡即可排序"
         Me.TeacherColumn.Width = 5
         '
@@ -1401,9 +1377,9 @@ Partial Class Main
         '
         Me.課程連結Column.HeaderText = "課程連結"
         Me.課程連結Column.Name = "課程連結Column"
-        Me.課程連結Column.ReadOnly = True
+        Me.課程連結Column.ReadOnly = true
         Me.課程連結Column.ToolTipText = "按一下這裡即可排序"
-        Me.課程連結Column.Visible = False
+        Me.課程連結Column.Visible = false
         '
         'NoteColumn
         '
@@ -1426,9 +1402,9 @@ Partial Class Main
         '
         'SplitContainer1
         '
-        Me.SplitContainer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SplitContainer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+            Or System.Windows.Forms.AnchorStyles.Left)  _
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.SplitContainer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.SplitContainer1.Location = New System.Drawing.Point(12, 24)
         Me.SplitContainer1.Name = "SplitContainer1"
@@ -1447,29 +1423,29 @@ Partial Class Main
         '
         'Button1
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Enabled = False
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
+        Me.Button1.Enabled = false
         Me.Button1.Location = New System.Drawing.Point(143, 571)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(119, 23)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "(下版功能)選課存檔"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'Button2
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Enabled = False
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left),System.Windows.Forms.AnchorStyles)
+        Me.Button2.Enabled = false
         Me.Button2.Location = New System.Drawing.Point(12, 571)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "(下版功能)選課讀檔"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = true
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 12!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(739, 614)
         Me.Controls.Add(Me.Button2)
@@ -1481,54 +1457,53 @@ Partial Class Main
         Me.Controls.Add(Me.AuthorLinkLabel)
         Me.Controls.Add(Me.FootStatusStrip)
         Me.Controls.Add(Me.Label1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Main"
-        Me.Text = "選課課程篩選v1.0.0.2"
-        Me.HeadTabControl.ResumeLayout(False)
-        Me.QueryTabPage.ResumeLayout(False)
-        Me.QueryTabPage.PerformLayout()
-        Me.TimePanel.ResumeLayout(False)
-        Me.TimePanel.PerformLayout()
-        Me.AcademicPanel.ResumeLayout(False)
-        Me.AcademicPanel.PerformLayout()
-        Me.FilterTabPage.ResumeLayout(False)
-        Me.FilterTabPage.PerformLayout()
-        Me.WeekPeriodGroupBox.ResumeLayout(False)
-        Me.WeekPeriodGroupBox.PerformLayout()
-        CType(Me.WeekAndPeriodDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ControlItemGroupBox.ResumeLayout(False)
-        Me.KeywordSplitContainer.Panel1.ResumeLayout(False)
-        Me.KeywordSplitContainer.Panel2.ResumeLayout(False)
-        Me.KeywordSplitContainer.Panel2.PerformLayout()
-        Me.KeywordSplitContainer.ResumeLayout(False)
-        Me.ConfirmTabControl.ResumeLayout(False)
-        Me.SubFilterTabPage.ResumeLayout(False)
-        Me.SubFilterTabPage.PerformLayout()
-        Me.PopularityTabPage.ResumeLayout(False)
-        Me.PopularityTabPage.PerformLayout()
-        Me.ControlIntPanel.ResumeLayout(False)
-        Me.ControlIntPanel.PerformLayout()
-        Me.CompareIntGroupBox.ResumeLayout(False)
-        Me.CompareIntGroupBox.PerformLayout()
-        Me.FilterInformationTabPage.ResumeLayout(False)
-        Me.FilterInformationTabPage.PerformLayout()
-        CType(Me.ControlFilterDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CourseDetailTabPage.ResumeLayout(False)
-        Me.FootStatusStrip.ResumeLayout(False)
-        Me.FootStatusStrip.PerformLayout()
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage9.ResumeLayout(False)
-        CType(Me.ResultDataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage2.ResumeLayout(False)
-        CType(Me.ResultDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FootTabControl.ResumeLayout(False)
-        Me.SplitContainer1.Panel1.ResumeLayout(False)
-        Me.SplitContainer1.Panel2.ResumeLayout(False)
-        Me.SplitContainer1.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.Text = "選課課程篩選v1.0.0.3"
+        Me.HeadTabControl.ResumeLayout(false)
+        Me.QueryTabPage.ResumeLayout(false)
+        Me.QueryTabPage.PerformLayout
+        Me.TimePanel.ResumeLayout(false)
+        Me.TimePanel.PerformLayout
+        Me.AcademicPanel.ResumeLayout(false)
+        Me.AcademicPanel.PerformLayout
+        Me.FilterTabPage.ResumeLayout(false)
+        Me.WeekPeriodGroupBox.ResumeLayout(false)
+        Me.WeekPeriodGroupBox.PerformLayout
+        CType(Me.WeekAndPeriodDataGridView,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ControlItemGroupBox.ResumeLayout(false)
+        Me.KeywordSplitContainer.Panel1.ResumeLayout(false)
+        Me.KeywordSplitContainer.Panel2.ResumeLayout(false)
+        Me.KeywordSplitContainer.Panel2.PerformLayout
+        Me.KeywordSplitContainer.ResumeLayout(false)
+        Me.ConfirmTabControl.ResumeLayout(false)
+        Me.SubFilterTabPage.ResumeLayout(false)
+        Me.SubFilterTabPage.PerformLayout
+        Me.PopularityTabPage.ResumeLayout(false)
+        Me.PopularityTabPage.PerformLayout
+        Me.ControlIntPanel.ResumeLayout(false)
+        Me.ControlIntPanel.PerformLayout
+        Me.CompareIntGroupBox.ResumeLayout(false)
+        Me.CompareIntGroupBox.PerformLayout
+        Me.FilterInformationTabPage.ResumeLayout(false)
+        Me.FilterInformationTabPage.PerformLayout
+        CType(Me.ControlFilterDataGridView,System.ComponentModel.ISupportInitialize).EndInit
+        Me.CourseDetailTabPage.ResumeLayout(false)
+        Me.FootStatusStrip.ResumeLayout(false)
+        Me.FootStatusStrip.PerformLayout
+        Me.TabPage5.ResumeLayout(false)
+        Me.TabPage9.ResumeLayout(false)
+        CType(Me.ResultDataGridView2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPage2.ResumeLayout(false)
+        CType(Me.ResultDataGridView,System.ComponentModel.ISupportInitialize).EndInit
+        Me.FootTabControl.ResumeLayout(false)
+        Me.SplitContainer1.Panel1.ResumeLayout(false)
+        Me.SplitContainer1.Panel2.ResumeLayout(false)
+        Me.SplitContainer1.ResumeLayout(false)
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents HeadTabControl As System.Windows.Forms.TabControl
     Friend WithEvents QueryTabPage As System.Windows.Forms.TabPage
     Friend WithEvents FilterTabPage As System.Windows.Forms.TabPage
@@ -1575,7 +1550,6 @@ Partial Class Main
     Friend WithEvents SubFilterTabPage As System.Windows.Forms.TabPage
     Friend WithEvents PeriodTabPage As System.Windows.Forms.TabPage
     Friend WithEvents WeekAndPeriodDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents WithNULLCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents ControlFilterDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -1606,7 +1580,6 @@ Partial Class Main
     Friend WithEvents 選擇Column As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents 選項Column As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents 值Column As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents OnlySelectedCourseCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ControlIntPanel As System.Windows.Forms.Panel
     Friend WithEvents KeywordSplitContainer As System.Windows.Forms.SplitContainer
@@ -1642,6 +1615,9 @@ Partial Class Main
     Friend WithEvents NoteColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CourseDetailTabPage As System.Windows.Forms.TabPage
     Friend WithEvents CourseDetailWebBrowser As System.Windows.Forms.WebBrowser
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents reverseCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents 節次Column As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents 日Column As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents 一Column As System.Windows.Forms.DataGridViewCheckBoxColumn
@@ -1650,8 +1626,5 @@ Partial Class Main
     Friend WithEvents 四Column As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents 五Column As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents 六Column As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Label14 As System.Windows.Forms.Label
 
 End Class

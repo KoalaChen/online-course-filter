@@ -131,7 +131,7 @@ Public Class Main
 
     Private Sub AuthorLinkLabel_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles AuthorLinkLabel.LinkClicked
         Try
-            System.Diagnostics.Process.Start("http://tomshare.net.ru/")
+            System.Diagnostics.Process.Start("http://tomshare.idv.tw/")
         Catch ex As Exception
             MsgBox("無法啟動瀏覽器，請在您的瀏覽器輸入網址。")
         End Try
@@ -139,7 +139,9 @@ Public Class Main
 
     Private Sub NextStep2Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextStep2Button.Click
         Dim Msg As String = String.Empty '集合錯誤訊息
-        HeadTabControl.Enabled = False
+        QueryTabPage.Enabled = False
+        DoFilterButton.Enabled = False
+
         WorkingToolStripProgressBar.Visible = True '顯示進度條
         WorkingToolStripProgressBar.Style = ProgressBarStyle.Marquee
         '檢查資料是否有誤
@@ -201,7 +203,8 @@ Public Class Main
                 '開始抓資料
                 GetDataTimer.Start()
             Else
-                HeadTabControl.Enabled = True
+                QueryTabPage.Enabled = True
+                DoFilterButton.Enabled = True
                 WorkingToolStripProgressBar.Visible = False '隱藏進度條
                 WorkingToolStripProgressBar.Style = ProgressBarStyle.Continuous
                 '錯誤訊息
@@ -212,7 +215,6 @@ Public Class Main
             CheckPage()
         End Try
     End Sub '查詢資料並開始擷取
-
     Private Sub GetDataTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GetDataTimer.Tick
         sender.Stop()
         '確定網頁是否重新載入
@@ -231,8 +233,12 @@ Public Class Main
         End If
         If Not AddRowResult Then
             MsgBox("抱歉，此次查詢找不到課程資料。請重試")
+            QueryTabPage.Enabled = True
+            DoFilterButton.Enabled = True
         ElseIf EndPage - StartPage = 0 Then
             MsgBox("工作結束")
+            QueryTabPage.Enabled = True
+            DoFilterButton.Enabled = True
             HeadTabControl.SelectedIndex = 1 '切換至 篩選畫面
             FootTabControl.SelectedIndex = 0 '切換至 選課資料
         End If
@@ -315,7 +321,19 @@ Public Class Main
         End If
 
         Try 'Choose Value
-            If FilterControl IsNot Nothing Then KeywordFilterListBox.Items.AddRange(FilterControl.Keyword) 'Keyword
+            If FilterControl IsNot Nothing Then
+                Dim tempKeyword As String() = FilterControl.Keyword
+                reFreshKeyword(FilterControl.Keyword, KeywordFilterListBox)
+                For Each keyword As String In tempKeyword
+                    If keyword.Contains("Not Like") Then
+                        Dim tempStr() As String = keyword.Split(New Char() {"*"})
+                        KeywordFilterListBox.Items.Add(tempStr(1) & "(不包含)") 'Keyword
+                    Else
+                        Dim tempStr() As String = keyword.Split(New Char() {"*"})
+                        KeywordFilterListBox.Items.Add(tempStr(1)) 'Keyword
+                    End If
+                Next
+            End If
             For Each i As DataGridViewRow In ResultDataGridView.Rows
                 If ChooseValueCheckedListBox.Items.IndexOf(i.Cells(ColumnIndex).Value) = -1 Then
                     ChooseValueCheckedListBox.Items.Add(i.Cells(ColumnIndex).Value)

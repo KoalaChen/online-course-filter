@@ -26,8 +26,6 @@ Public Module FilterModule
         For Each i As Char In Period
             Main.WeekAndPeriodDataGridView.Rows.Add(New String() {"第" & i & "節", False, False, False, False, False, False, False})
         Next
-        Main.WithNULLCheckBox.Checked = False
-        Main.OnlySelectedCourseCheckBox.Checked = False
         Main.KeywordFilterListBox.Items.Clear()
     End Sub '清除篩選資料
 
@@ -62,8 +60,10 @@ Public Module FilterModule
         Dim KeywordResult As New StringCollection '蒐集關鍵字
         Dim WeekPeriodResult As New StringCollection '蒐集可以時間
         Dim WeekPeriodNotInResult As New StringCollection '蒐集不可以時間
+
         Dim Result As New System.Text.StringBuilder '增加效能
         Dim Operation() As String = {"And", "Or", "Not", "Like", "In"} '運算元
+
         '建立 關鍵字
         For i As Integer = 0 To FilterField.Keys.Count - 1
             Dim TempResult As String = String.Empty
@@ -74,7 +74,7 @@ Public Module FilterModule
             Else
                 Dim TempStr() As String = FilterVar.Keyword
                 For j As Integer = 0 To TempStr.Count - 1
-                    TempResult &= " " & Key & " " & Operation(OpEnum.Like) & " '*" & TempStr(j) & "*' " 'Like
+                    TempResult &= Key & TempStr(j)  'Like
                     If Not j = TempStr.Count - 1 Then
                         TempResult &= " " & Operation(OpEnum.And) & " " 'Or
                     End If
@@ -92,8 +92,9 @@ Public Module FilterModule
                 End If
             Next
         Next
+        If WeekPeriodResult.Count >= 91 Then WeekPeriodResult.Clear() '若使用者全選，則取消選擇
         '星期和節次(不包含)
-        If WeekPeriodResult.Count Then '如果，使用者有指定可以時間
+        If WeekPeriodResult.Count AndAlso WeekPeriodResult.Count < 91 Then '如果使用者指定時間 AND 不包含全選
             For i As Integer = 0 To Main.WeekAndPeriodDataGridView.RowCount - 1
                 For j As Integer = 1 To Main.WeekAndPeriodDataGridView.ColumnCount - 1
                     If Main.WeekAndPeriodDataGridView(j, i).Value <> "True" AndAlso j <> 0 Then
@@ -108,8 +109,9 @@ Public Module FilterModule
 
         '輸出空值(如果都沒有指定的話)
         If FilterField.Keys.Count = 0 AndAlso WeekPeriodResult.Count = 0 Then Return Nothing
-        Result.AppendLine(IIf(FilterField.Keys.Count > 0, "(", String.Empty))
+
         '輸出 關鍵字
+        Result.AppendLine(IIf(FilterField.Keys.Count > 0, "(", String.Empty))
         If KeywordResult.Count Then '如果有才執行
             For i As Integer = 0 To KeywordResult.Count - 1
                 Result.AppendLine(" " & KeywordResult(i) & " ")
@@ -118,21 +120,37 @@ Public Module FilterModule
                 End If
             Next
         End If
-        Result.AppendLine(IIf(FilterField.Keys.Count > 0, ")", String.Empty))
+        Result.Append(IIf(FilterField.Keys.Count > 0, ")", String.Empty))
+
         '輸出 星期和節次(包含)
-        Result.AppendLine(IIf(FilterField.Keys.Count = 0 OrElse WeekPeriodResult.Count = 0, String.Empty, " And "))
+        If Main.reverseCheckBox.Checked AndAlso WeekPeriodNotInResult.Count > 1 Then
+            Result.AppendLine(IIf((FilterField.Keys.Count <> 0 AndAlso WeekPeriodResult.Count = 0) OrElse _
+                                  (FilterField.Keys.Count = 0 AndAlso WeekPeriodResult.Count <> 0), " Not ", " And Not "))
+        Else
+            Result.AppendLine(IIf((FilterField.Keys.Count <> 0 AndAlso WeekPeriodResult.Count = 0) OrElse _
+                                  (FilterField.Keys.Count = 0 AndAlso WeekPeriodResult.Count <> 0), String.Empty, " And "))
+        End If
         Result.AppendLine(IIf(WeekPeriodResult.Count = 0, String.Empty, " ( "))  'TO DO:
         For i As Integer = 0 To WeekPeriodResult.Count - 1
-            Result.AppendLine(" ( " & WeekPeriodResult(i) & " ) ")
+            Result.Append(" ( " & WeekPeriodResult(i) & " ) ")
             If i <> WeekPeriodResult.Count - 1 Then
-                Result.AppendLine(" " & Operation(1) & " ")
+                Result.AppendLine(" " & Operation(OpEnum.Or) & " ")
             End If
         Next
         Result.AppendLine(IIf(WeekPeriodResult.Count = 0, String.Empty, " ) "))
+
+        Dim test As String = Result.ToString
         '輸出 星期和節次(不包含)
-        Result.AppendLine(IIf( _
-                        (WeekPeriodResult.Count <> 0 AndAlso WeekPeriodNotInResult.Count <> 0) _
-                       , " And Not (", String.Empty))
+        If Main.reverseCheckBox.Checked Then
+            Result.AppendLine(IIf( _
+                            (WeekPeriodResult.Count <> 0 AndAlso WeekPeriodNotInResult.Count <> 0) _
+                           , " And  (", String.Empty))
+        Else
+            Result.AppendLine(IIf( _
+                            (WeekPeriodResult.Count <> 0 AndAlso WeekPeriodNotInResult.Count <> 0) _
+                           , " And Not (", String.Empty))
+        End If
+
         For i As Integer = 0 To WeekPeriodNotInResult.Count - 1
             Result.Append(" ( " & WeekPeriodNotInResult(i) & " ) ")
             If i <> WeekPeriodNotInResult.Count - 1 Then
@@ -145,8 +163,19 @@ Public Module FilterModule
             Result.Chars(Result.Length - 1) = String.Empty
             Result.Chars(Result.Length - 2) = String.Empty
         End If
-        Dim test As String = Result.ToString
+        Dim test2 As String = Result.ToString
         Return Result.ToString
     End Function '類似SQL語法
 
+    Public Sub reFreshKeyword(ByRef tempKeyword As String(), ByRef [ListBox] As System.Windows.Forms.ListBox)
+        For Each keyword As String In tempKeyword
+            If keyword.Contains("Not Like") Then
+                Dim tempStr() As String = keyword.Split(New Char() {"*"})
+                [ListBox].Items.Add(tempStr(1) & "(不包含)") 'Keyword
+            Else
+                Dim tempStr() As String = keyword.Split(New Char() {"*"})
+                [ListBox].Items.Add(tempStr(1)) 'Keyword
+            End If
+        Next
+    End Sub
 End Module

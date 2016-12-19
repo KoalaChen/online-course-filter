@@ -33,6 +33,9 @@ Partial Class InputKeywordForm
         Me.CloseButton = New System.Windows.Forms.Button
         Me.illegalCharButton = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
+        Me.includeRadioButton = New System.Windows.Forms.RadioButton
+        Me.notIncludeRadioButton = New System.Windows.Forms.RadioButton
+        Me.Label3 = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
         'KeywordFilterTextBox
@@ -45,7 +48,7 @@ Partial Class InputKeywordForm
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(12, 37)
+        Me.Label11.Location = New System.Drawing.Point(12, 58)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(173, 12)
         Me.Label11.TabIndex = 2
@@ -54,7 +57,7 @@ Partial Class InputKeywordForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(171, 74)
+        Me.Label2.Location = New System.Drawing.Point(171, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 12)
         Me.Label2.TabIndex = 6
@@ -64,9 +67,9 @@ Partial Class InputKeywordForm
         '
         Me.KeywordListBox.FormattingEnabled = True
         Me.KeywordListBox.ItemHeight = 12
-        Me.KeywordListBox.Location = New System.Drawing.Point(14, 89)
+        Me.KeywordListBox.Location = New System.Drawing.Point(14, 101)
         Me.KeywordListBox.Name = "KeywordListBox"
-        Me.KeywordListBox.Size = New System.Drawing.Size(258, 124)
+        Me.KeywordListBox.Size = New System.Drawing.Size(271, 136)
         Me.KeywordListBox.TabIndex = 7
         '
         'AddKeywordButton
@@ -74,24 +77,24 @@ Partial Class InputKeywordForm
         Me.AddKeywordButton.Enabled = False
         Me.AddKeywordButton.Location = New System.Drawing.Point(230, 10)
         Me.AddKeywordButton.Name = "AddKeywordButton"
-        Me.AddKeywordButton.Size = New System.Drawing.Size(42, 23)
+        Me.AddKeywordButton.Size = New System.Drawing.Size(55, 23)
         Me.AddKeywordButton.TabIndex = 1
-        Me.AddKeywordButton.Text = "新增"
+        Me.AddKeywordButton.Text = "新增(&A)"
         Me.AddKeywordButton.UseVisualStyleBackColor = True
         '
         'DelSelectKeywordButton
         '
-        Me.DelSelectKeywordButton.Location = New System.Drawing.Point(182, 219)
+        Me.DelSelectKeywordButton.Location = New System.Drawing.Point(169, 245)
         Me.DelSelectKeywordButton.Name = "DelSelectKeywordButton"
-        Me.DelSelectKeywordButton.Size = New System.Drawing.Size(42, 23)
+        Me.DelSelectKeywordButton.Size = New System.Drawing.Size(55, 23)
         Me.DelSelectKeywordButton.TabIndex = 8
-        Me.DelSelectKeywordButton.Text = "刪除"
+        Me.DelSelectKeywordButton.Text = "刪除(&D)"
         Me.DelSelectKeywordButton.UseVisualStyleBackColor = True
         '
         'NameLabel
         '
         Me.NameLabel.AutoSize = True
-        Me.NameLabel.Location = New System.Drawing.Point(12, 74)
+        Me.NameLabel.Location = New System.Drawing.Point(12, 86)
         Me.NameLabel.Name = "NameLabel"
         Me.NameLabel.Size = New System.Drawing.Size(44, 12)
         Me.NameLabel.TabIndex = 5
@@ -99,37 +102,71 @@ Partial Class InputKeywordForm
         '
         'CloseButton
         '
-        Me.CloseButton.Location = New System.Drawing.Point(230, 219)
+        Me.CloseButton.Location = New System.Drawing.Point(230, 245)
         Me.CloseButton.Name = "CloseButton"
-        Me.CloseButton.Size = New System.Drawing.Size(42, 23)
+        Me.CloseButton.Size = New System.Drawing.Size(55, 23)
         Me.CloseButton.TabIndex = 9
-        Me.CloseButton.Text = "關閉"
+        Me.CloseButton.Text = "關閉(&C)"
         Me.CloseButton.UseVisualStyleBackColor = True
         '
         'illegalCharButton
         '
-        Me.illegalCharButton.Location = New System.Drawing.Point(179, 48)
+        Me.illegalCharButton.Location = New System.Drawing.Point(191, 58)
         Me.illegalCharButton.Name = "illegalCharButton"
-        Me.illegalCharButton.Size = New System.Drawing.Size(44, 23)
+        Me.illegalCharButton.Size = New System.Drawing.Size(56, 23)
         Me.illegalCharButton.TabIndex = 4
-        Me.illegalCharButton.Text = "說明"
+        Me.illegalCharButton.Text = "說明(&H)"
         Me.illegalCharButton.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 53)
+        Me.Label1.Location = New System.Drawing.Point(12, 74)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(161, 12)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "．輸入的值不能包含以下字元"
+        '
+        'includeRadioButton
+        '
+        Me.includeRadioButton.AutoSize = True
+        Me.includeRadioButton.Checked = True
+        Me.includeRadioButton.Location = New System.Drawing.Point(14, 39)
+        Me.includeRadioButton.Name = "includeRadioButton"
+        Me.includeRadioButton.Size = New System.Drawing.Size(47, 16)
+        Me.includeRadioButton.TabIndex = 10
+        Me.includeRadioButton.TabStop = True
+        Me.includeRadioButton.Text = "包含"
+        Me.includeRadioButton.UseVisualStyleBackColor = True
+        '
+        'notIncludeRadioButton
+        '
+        Me.notIncludeRadioButton.AutoSize = True
+        Me.notIncludeRadioButton.Location = New System.Drawing.Point(58, 39)
+        Me.notIncludeRadioButton.Name = "notIncludeRadioButton"
+        Me.notIncludeRadioButton.Size = New System.Drawing.Size(59, 16)
+        Me.notIncludeRadioButton.TabIndex = 11
+        Me.notIncludeRadioButton.Text = "不包含"
+        Me.notIncludeRadioButton.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 255)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(109, 12)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "[查詢使用AND運算]"
         '
         'InputKeywordForm
         '
         Me.AcceptButton = Me.AddKeywordButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 250)
+        Me.ClientSize = New System.Drawing.Size(297, 280)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.notIncludeRadioButton)
+        Me.Controls.Add(Me.includeRadioButton)
         Me.Controls.Add(Me.illegalCharButton)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.NameLabel)
@@ -158,4 +195,7 @@ Partial Class InputKeywordForm
     Friend WithEvents CloseButton As System.Windows.Forms.Button
     Friend WithEvents illegalCharButton As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents includeRadioButton As System.Windows.Forms.RadioButton
+    Friend WithEvents notIncludeRadioButton As System.Windows.Forms.RadioButton
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

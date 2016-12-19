@@ -21,7 +21,7 @@
 
     Private Sub InputKeywordForm_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            KeywordListBox.Items.AddRange(Filter.Keyword)
+            reFreshKeyword(Filter.Keyword, KeywordListBox)
         Catch ex As Exception
         End Try
     End Sub
@@ -38,41 +38,45 @@
             MsgBox("抱歉，您輸入的值含有非法字元：" & illegalMask, MsgBoxStyle.Critical, "輸入錯誤")
             Exit Sub
         End If
-        Dim Input() As String = Str.Split(New Char() {vbTab, " "})
+        Dim Input() As String = Str.Split(New Char() {vbTab, " "}) '資料輸入
         For Each i As String In Input
-            If KeywordListBox.FindStringExact(i) = ListBox.NoMatches AndAlso Not String.IsNullOrEmpty(i) Then
-                Filter.Keyword = i
-                KeywordListBox.Items.Add(i)
-                Main.KeywordFilterListBox.Items.Add(i)
+            If KeywordListBox.FindStringExact(i) = ListBox.NoMatches Then
+                If KeywordListBox.FindStringExact(i & "(不包含)") = ListBox.NoMatches AndAlso Not String.IsNullOrEmpty(i) Then
+                    Filter.Keyword = IIf(notIncludeRadioButton.Checked, " Not", String.Empty) & " Like '*" & i & "*'"
+                    KeywordListBox.Items.Add(i & IIf(notIncludeRadioButton.Checked, "(不包含)", String.Empty))
+                    Main.KeywordFilterListBox.Items.Add(i & IIf(notIncludeRadioButton.Checked, "(不包含)", String.Empty))
+                End If
             End If
         Next
         KeywordFilterTextBox.Text = String.Empty
-    End Sub
+    End Sub '新增
 
     Private Sub DelSelectKeywordButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DelSelectKeywordButton.Click
         Del()
-    End Sub
+    End Sub '刪除指定項目
 
     Sub Del()
         If KeywordListBox.SelectedIndex = ListBox.NoMatches Then
             MsgBox("請選擇要刪除的項目")
         Else
-            Filter.Remove(FilterEnum.Keyword, KeywordListBox.SelectedItem)
+            Dim keyword As String() = KeywordListBox.SelectedItem.ToString.Split(New Char() {"(", ")"})
+            Filter.Remove(FilterEnum.Keyword, IIf(keyword.Count > 1, " Not", String.Empty) & _
+                                                 " Like '*" & KeywordListBox.SelectedItem & "*'")
             Main.KeywordFilterListBox.Items.RemoveAt(KeywordListBox.SelectedIndex)
             KeywordListBox.Items.RemoveAt(KeywordListBox.SelectedIndex)
         End If
-    End Sub
+    End Sub '刪除指定項目
 
     Private Sub CloseButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseButton.Click
         If KeywordListBox.Items.Count = 0 Then
             FilterModule.Remove(Keyword)
         End If
         Me.Close()
-    End Sub '關閉
+    End Sub '關閉視窗
 
     Private Sub KeywordFilterTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KeywordFilterTextBox.TextChanged
         AddKeywordButton.Enabled = IIf(String.IsNullOrEmpty(sender.Text.Trim), False, True)
-    End Sub
+    End Sub '檢查使用者是否打字
 
     Private Sub illegalCharButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles illegalCharButton.Click
         Dim MaskStr As String = String.Empty
@@ -81,11 +85,11 @@
         Next
         MsgBox("查詢時輸入以下字元會導致查詢錯誤" & vbNewLine & _
                "例如：" & MaskStr)
-    End Sub
+    End Sub '輸入錯誤提醒
 
     Private Sub KeywordListBox_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles KeywordListBox.KeyUp
         If e.KeyCode = Keys.Delete AndAlso KeywordListBox.SelectedItem IsNot Nothing Then
             Del()
         End If
-    End Sub
+    End Sub '按刪除鍵
 End Class

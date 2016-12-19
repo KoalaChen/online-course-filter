@@ -8,7 +8,11 @@ Public Class FilterClass
 
     Sub Remove(ByVal Type As FilterEnum, ByVal Str As String)
         If Type = FilterEnum.Keyword Then
+            Str = Str.Replace("(不包含)", String.Empty)
             KeywordField.Remove(Str)
+            'Dim a As String = KeywordField(0)
+            'Dim b As String = KeywordField(1)
+            'Dim c As String = KeywordField(2)
             'ElseIf Type = FilterEnum.Value Then
             '    ValueField.Remove(Str)
         End If
